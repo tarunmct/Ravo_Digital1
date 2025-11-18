@@ -2,6 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { slideUp } from '../utility/animation';
 import { Link } from 'react-router-dom';
+import { FiCheckCircle, FiTrendingUp, FiBarChart2, FiUsers, FiTarget, FiClock } from 'react-icons/fi';
+import DigitalMarketingImg from '../assets/dm3.jpeg';
 
 const DigitalMarketing = () => {
   const services = [
@@ -38,12 +40,12 @@ const DigitalMarketing = () => {
   ];
 
   const benefits = [
-    'Increased brand visibility',
-    'Higher conversion rates',
-    'Better ROI tracking',
-    'Expert team guidance',
-    'Customized strategies',
-    '24/7 campaign monitoring',
+    { text: 'Increased brand visibility', icon: FiTrendingUp, color: 'from-blue-500 to-blue-600' },
+    { text: 'Higher conversion rates', icon: FiBarChart2, color: 'from-green-500 to-green-600' },
+    { text: 'Better ROI tracking', icon: FiTarget, color: 'from-purple-500 to-purple-600' },
+    { text: 'Expert team guidance', icon: FiUsers, color: 'from-orange-500 to-orange-600' },
+    { text: 'Customized strategies', icon: FiCheckCircle, color: 'from-pink-500 to-pink-600' },
+    { text: '24/7 campaign monitoring', icon: FiClock, color: 'from-cyan-500 to-cyan-600' },
   ];
 
   return (
@@ -58,7 +60,7 @@ const DigitalMarketing = () => {
             className="space-y-6"
           >
             <h1 className="text-4xl xl:text-5xl font-bold">
-              Digital <span className="text-gray-400 underline">Marketing</span>
+              Digital <span className="text-[#fdcd2d]  underline">Marketing</span>
             </h1>
             <p className="text-lg text-gray-600 leading-relaxed">
               Elevate your brand's online presence and reach your target audience effectively. 
@@ -80,127 +82,42 @@ const DigitalMarketing = () => {
             initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="flex justify-center items-center"
+            className="flex justify-center items-center relative w-full"
           >
-            <div className="bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-2xl p-8 w-full max-w-lg relative overflow-hidden">
-              <svg viewBox="0 0 400 500" className="w-full h-full">
-                {/* Paper Airplanes */}
-                <g opacity="0.8">
-                  <path d="M80 60 L95 80 L80 85 Z" fill="#87CEEB" stroke="#4682B4" strokeWidth="1"/>
-                  <path d="M110 50 L125 70 L110 75 Z" fill="#E0F2F1" stroke="#87CEEB" strokeWidth="1"/>
-                  <path d="M70 80 L85 100 L70 105 Z" fill="#87CEEB" stroke="#4682B4" strokeWidth="1"/>
-                </g>
-
-                {/* Purple Gear Icon - Top Right */}
-                <g transform="translate(280, 50)">
-                  <circle cx="0" cy="0" r="25" fill="#7B2CBF" opacity="0.9"/>
-                  <circle cx="0" cy="0" r="15" fill="#FFFFFF"/>
-                  <path d="M0,-25 L0,-20 M0,20 L0,25 M-25,0 L-20,0 M20,0 L25,0 M-17.7,-17.7 L-14.1,-14.1 M14.1,14.1 L17.7,17.7 M-17.7,17.7 L-14.1,14.1 M17.7,-17.7 L14.1,-14.1" stroke="#7B2CBF" strokeWidth="2"/>
-                  <circle cx="0" cy="0" r="8" fill="#7B2CBF"/>
-                </g>
-
-                {/* Video/Content Card - Middle Right */}
-                <g transform="translate(290, 200)">
-                  <rect x="0" y="0" width="60" height="45" rx="5" fill="#FFFFFF" stroke="#E0E0E0" strokeWidth="2"/>
-                  <polygon points="20,15 20,30 30,22.5" fill="#3B82F6"/>
-                  <line x1="35" y1="12" x2="50" y2="12" stroke="#666" strokeWidth="2" strokeLinecap="round"/>
-                  <line x1="35" y1="18" x2="50" y2="18" stroke="#666" strokeWidth="2" strokeLinecap="round"/>
-                  <line x1="35" y1="24" x2="50" y2="24" stroke="#666" strokeWidth="2" strokeLinecap="round"/>
-                </g>
-
-                {/* Image/Gallery Card - Bottom Left */}
-                <g transform="translate(30, 380)">
-                  <rect x="0" y="0" width="50" height="40" rx="5" fill="#FFFFFF" stroke="#E0E0E0" strokeWidth="2"/>
-                  <path d="M15,15 L25,10 L35,15 L35,30 L25,35 L15,30 Z" fill="#FFA500" opacity="0.6"/>
-                  <circle cx="25" cy="18" r="3" fill="#FFD700"/>
-                </g>
-
-                {/* Male Figure - Left Side */}
-                <g transform="translate(50, 250)">
-                  {/* Body */}
-                  <rect x="15" y="80" width="25" height="40" rx="3" fill="#FF6B35"/>
-                  <rect x="20" y="75" width="15" height="15" rx="7" fill="#FFE5D9"/>
-                  {/* Arms */}
-                  <rect x="10" y="85" width="8" height="25" rx="4" fill="#FFE5D9"/>
-                  <rect x="37" y="85" width="8" height="25" rx="4" fill="#FFE5D9"/>
-                  {/* Legs */}
-                  <rect x="18" y="120" width="8" height="35" rx="4" fill="#7B2CBF"/>
-                  <rect x="29" y="120" width="8" height="35" rx="4" fill="#7B2CBF"/>
-                  {/* Pointer Stick */}
-                  <line x1="50" y1="100" x2="120" y2="140" stroke="#333" strokeWidth="3" strokeLinecap="round"/>
-                  <polygon points="115,137 120,140 117,145" fill="#333"/>
-                </g>
-
-                {/* Female Figure - Right Side */}
-                <g transform="translate(290, 250)">
-                  {/* Body */}
-                  <rect x="10" y="80" width="25" height="40" rx="3" fill="#87CEEB"/>
-                  <rect x="15" y="75" width="15" height="15" rx="7" fill="#FFE5D9"/>
-                  {/* Arms - Raised */}
-                  <g transform="translate(9, 90) rotate(-20)">
-                    <rect x="-4" y="-10" width="8" height="20" rx="4" fill="#FFE5D9"/>
-                  </g>
-                  <g transform="translate(36, 90) rotate(20)">
-                    <rect x="-4" y="-10" width="8" height="20" rx="4" fill="#FFE5D9"/>
-                  </g>
-                  {/* Legs */}
-                  <rect x="13" y="120" width="8" height="35" rx="4" fill="#DC2626"/>
-                  <rect x="24" y="120" width="8" height="35" rx="4" fill="#DC2626"/>
-                </g>
-
-                {/* Dark Purple Smartphone - Center */}
-                <g transform="translate(150, 100)">
-                  {/* Phone Body */}
-                  <rect x="0" y="0" width="100" height="200" rx="12" fill="#4A148C" stroke="#333" strokeWidth="3"/>
-                  <rect x="5" y="25" width="90" height="165" rx="8" fill="#E8F4F8"/>
-                  
-                  {/* Screen Content - Bar Chart */}
-                  <g transform="translate(15, 40)">
-                    {/* Bar Chart Bars */}
-                    <rect x="0" y="40" width="12" height="40" fill="#3B82F6" rx="2"/>
-                    <rect x="15" y="25" width="12" height="55" fill="#FBBF24" rx="2"/>
-                    <rect x="30" y="20" width="12" height="60" fill="#F97316" rx="2"/>
-                    <rect x="45" y="35" width="12" height="45" fill="#7B2CBF" rx="2"/>
-                    
-                    {/* Line Graph Overlay */}
-                    <polyline points="6,60 21,45 36,40 51,55" fill="none" stroke="#3B82F6" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-                    <circle cx="6" cy="60" r="3" fill="#3B82F6"/>
-                    <circle cx="21" cy="45" r="3" fill="#3B82F6"/>
-                    <circle cx="36" cy="40" r="3" fill="#3B82F6"/>
-                    <circle cx="51" cy="55" r="3" fill="#3B82F6"/>
-                  </g>
-
-                  {/* Circular Charts Below Bar Chart */}
-                  <g transform="translate(20, 130)">
-                    {/* Chart 1 - Blue */}
-                    <circle cx="10" cy="10" r="8" fill="none" stroke="#3B82F6" strokeWidth="4" strokeDasharray="20 15" transform="rotate(-90 10 10)"/>
-                    <circle cx="10" cy="10" r="8" fill="none" stroke="#E0E0E0" strokeWidth="4" strokeDasharray="15 20" transform="rotate(70 10 10)"/>
-                    
-                    {/* Chart 2 - Yellow */}
-                    <circle cx="35" cy="10" r="8" fill="none" stroke="#FBBF24" strokeWidth="4" strokeDasharray="18 17" transform="rotate(-90 35 10)"/>
-                    <circle cx="35" cy="10" r="8" fill="none" stroke="#E0E0E0" strokeWidth="4" strokeDasharray="17 18" transform="rotate(72 35 10)"/>
-                    
-                    {/* Chart 3 - Orange */}
-                    <circle cx="60" cy="10" r="8" fill="none" stroke="#F97316" strokeWidth="4" strokeDasharray="22 13" transform="rotate(-90 60 10)"/>
-                    <circle cx="60" cy="10" r="8" fill="none" stroke="#E0E0E0" strokeWidth="4" strokeDasharray="13 22" transform="rotate(68 60 10)"/>
-                  </g>
-                </g>
-
-                {/* Megaphone - Bottom Center */}
-                <g transform="translate(180, 340)">
-                  <path d="M0,0 L20,10 L20,30 L0,40 Z" fill="#FFFFFF" stroke="#E0E0E0" strokeWidth="2"/>
-                  <path d="M0,10 Q-10,15 -10,20 Q-10,25 0,30" fill="#DC2626" stroke="#B91C1C" strokeWidth="2"/>
-                  <ellipse cx="10" cy="20" rx="8" ry="15" fill="#FFFFFF" opacity="0.3"/>
-                  
-                  {/* Bar Chart Coming Out */}
-                  <g transform="translate(25, 15)">
-                    <rect x="0" y="8" width="6" height="12" fill="#3B82F6" rx="1"/>
-                    <rect x="8" y="5" width="6" height="15" fill="#FBBF24" rx="1"/>
-                    <rect x="16" y="3" width="6" height="17" fill="#F97316" rx="1"/>
-                  </g>
-                </g>
-              </svg>
-            </div>
+            <motion.div
+              className="relative group w-full max-w-2xl"
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.5 }}
+            >
+              {/* Decorative Background */}
+              <div className="absolute -inset-6 bg-gradient-to-br from-[#fdcd2d]/20 to-blue-200/20 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
+              
+              <motion.div
+                className="relative bg-white rounded-3xl p-8 shadow-2xl overflow-hidden border border-gray-100"
+                animate={{ 
+                  rotate: [0, 2, -2, 1.5, -1.5, 0],
+                }}
+                transition={{ 
+                  duration: 6,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                  delay: 1
+                }}
+              >
+                <div className="relative overflow-hidden rounded-2xl">
+                  <motion.img 
+                    src={DigitalMarketingImg} 
+                    alt="Digital Marketing" 
+                    className="w-full h-auto object-cover"
+                    whileHover={{ scale: 1.05 }}
+                    transition={{ duration: 0.5 }}
+                  />
+                  {/* Overlay gradient on hover */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+              </motion.div>
+            </motion.div>
           </motion.div>
         </div>
       </section>
@@ -242,43 +159,132 @@ const DigitalMarketing = () => {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-20">
-        <div className="container mx-auto px-6 sm:px-12 lg:px-24 xl:px-40">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <section className="py-20 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
+        {/* Decorative Background Elements */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute top-20 right-10 w-72 h-72 bg-[#fdcd2d]/10 rounded-full mix-blend-multiply filter blur-3xl"></div>
+          <div className="absolute bottom-20 left-10 w-72 h-72 bg-blue-200/20 rounded-full mix-blend-multiply filter blur-3xl"></div>
+        </div>
+
+        <div className="container mx-auto px-6 sm:px-12 lg:px-24 xl:px-40 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            {/* Left Content */}
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
+              transition={{ duration: 0.8 }}
+              className="space-y-6"
             >
-              <h2 className="text-4xl xl:text-5xl font-bold mb-6">
-                Why Choose Our <span className="text-gray-400 underline">Services</span>
+              <motion.span
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+                className="inline-block px-4 py-2 bg-[#fdcd2d]/20 text-[#fdcd2d] font-semibold rounded-full text-sm uppercase tracking-wide"
+              >
+                Why Choose Us
+              </motion.span>
+              <h2 className="text-4xl xl:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-6 leading-tight">
+                Why Choose Our <br />
+                <span className="text-[#fdcd2d] relative">
+                  Services
+                  <motion.span
+                    className="absolute -bottom-2 left-0 right-0 h-3 bg-[#fdcd2d]/30 -z-10"
+                    initial={{ scaleX: 0 }}
+                    whileInView={{ scaleX: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8, delay: 0.3 }}
+                  />
+                </span>
               </h2>
-              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+              <p className="text-xl text-gray-700 mb-8 leading-relaxed font-light">
                 We combine creativity with data-driven strategies to deliver exceptional results 
                 that drive growth and engagement for your business.
               </p>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+                className="flex items-center gap-4 p-6 bg-white rounded-2xl shadow-lg border border-gray-100"
+              >
+                <div className="w-16 h-16 bg-gradient-to-br from-[#fdcd2d] to-orange-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <FiCheckCircle className="w-8 h-8 text-white" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-gray-900 mb-1">Proven Results</h3>
+                  <p className="text-gray-600">Track record of success with measurable outcomes</p>
+                </div>
+              </motion.div>
             </motion.div>
+
+            {/* Right Content - Image and Benefits */}
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="space-y-4"
+              transition={{ duration: 0.8 }}
+              className="space-y-6"
             >
-              {benefits.map((benefit, index) => (
+              {/* Image */}
+              <motion.div
+                className="relative group"
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+              >
+                {/* Decorative Background */}
+                <div className="absolute -inset-6 bg-gradient-to-br from-[#fdcd2d]/20 to-blue-200/20 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
+                
                 <motion.div
-                  key={benefit}
-                  initial={{ opacity: 0, x: 50 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="flex items-center gap-4 p-4 bg-gray-50 rounded-lg"
+                  className="relative bg-white rounded-3xl p-6 shadow-2xl overflow-hidden border border-gray-100"
+                  animate={{ 
+                    rotate: [0, 2, -2, 1.5, -1.5, 0],
+                  }}
+                  transition={{ 
+                    duration: 6,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                    delay: 1
+                  }}
                 >
-                  <div className="w-2 h-2 bg-[#fdcd2d] rounded-full"></div>
-                  <p className="text-lg font-medium text-gray-800">{benefit}</p>
+                  <div className="relative overflow-hidden rounded-2xl">
+                    <motion.img 
+                      src={DigitalMarketingImg} 
+                      alt="Digital Marketing" 
+                      className="w-full h-auto object-cover"
+                      whileHover={{ scale: 1.05 }}
+                      transition={{ duration: 0.5 }}
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  </div>
                 </motion.div>
-              ))}
+              </motion.div>
+
+              {/* Benefits Grid */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {benefits.map((benefit, index) => (
+                  <motion.div
+                    key={benefit.text}
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
+                    whileHover={{ scale: 1.05, y: -5 }}
+                    className="group bg-white rounded-xl p-5 shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-300 cursor-pointer"
+                  >
+                    <div className={`w-12 h-12 bg-gradient-to-br ${benefit.color} rounded-lg flex items-center justify-center mb-3 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-md`}>
+                      <benefit.icon className="w-6 h-6 text-white" />
+                    </div>
+                    <p className="text-base font-semibold text-gray-900 group-hover:text-[#fdcd2d] transition-colors duration-300">
+                      {benefit.text}
+                    </p>
+                    <div className="mt-2 h-1 w-0 bg-gradient-to-r from-[#fdcd2d] to-orange-500 group-hover:w-full transition-all duration-300"></div>
+                  </motion.div>
+                ))}
+              </div>
             </motion.div>
           </div>
         </div>

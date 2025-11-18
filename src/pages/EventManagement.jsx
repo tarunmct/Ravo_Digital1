@@ -158,18 +158,50 @@ const EventManagement = () => {
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="space-y-6"
+              transition={{ duration: 0.8 }}
+              className="space-y-8"
             >
-              <h2 className="text-4xl xl:text-5xl font-bold text-gray-900 mb-4">
-                Seamlessly Executed Events
-              </h2>
-              <p className="text-lg text-gray-600 leading-relaxed">
+              {/* Badge */}
+              <motion.span
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+                className="inline-block px-4 py-2 bg-orange-100 text-orange-600 font-semibold rounded-full text-sm uppercase tracking-wide"
+              >
+                Our Expertise
+              </motion.span>
+
+              {/* Heading */}
+              <div>
+                <h2 className="text-4xl xl:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-4 leading-tight">
+                  Seamlessly Executed <br />
+                  <span className="text-orange-500 relative">
+                    Events
+                    <motion.span
+                      className="absolute -bottom-2 left-0 right-0 h-3 bg-orange-200/50 -z-10"
+                      initial={{ scaleX: 0 }}
+                      whileInView={{ scaleX: 1 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.8, delay: 0.3 }}
+                    />
+                  </span>
+                </h2>
+              </div>
+
+              {/* Description */}
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                className="text-xl text-gray-700 leading-relaxed font-light"
+              >
                 We offer end-to-end management, covering everything from conceptual design to on-site coordination, ensuring a stress-free experience for you.
-              </p>
+              </motion.p>
 
               {/* Three Service Cards */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
                 {[
                   {
                     title: 'Weddings & Celebrations',
@@ -180,6 +212,8 @@ const EventManagement = () => {
                       </svg>
                     ),
                     color: '#EC4899',
+                    gradient: 'from-pink-500 to-rose-500',
+                    bgGradient: 'from-pink-50 to-rose-50',
                   },
                   {
                     title: 'Corporate Events',
@@ -190,6 +224,8 @@ const EventManagement = () => {
                       </svg>
                     ),
                     color: '#14B8A6',
+                    gradient: 'from-teal-500 to-cyan-500',
+                    bgGradient: 'from-teal-50 to-cyan-50',
                   },
                   {
                     title: 'Personalized Parties',
@@ -200,25 +236,45 @@ const EventManagement = () => {
                       </svg>
                     ),
                     color: '#F97316',
+                    gradient: 'from-orange-500 to-amber-500',
+                    bgGradient: 'from-orange-50 to-amber-50',
                   },
                 ].map((service, index) => (
                   <motion.div
                     key={service.title}
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
+                    initial={{ opacity: 0, y: 30, scale: 0.9 }}
+                    whileInView={{ opacity: 1, y: 0, scale: 1 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: index * 0.1 }}
-                    className="bg-white rounded-xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow"
+                    transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
+                    whileHover={{ scale: 1.05, y: -8 }}
+                    className="group relative bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-300 cursor-pointer overflow-hidden"
                   >
-                    <div className="mb-4" style={{ color: service.color }}>
-                      {service.icon}
+                    {/* Background Gradient on Hover */}
+                    <div className={`absolute inset-0 bg-gradient-to-br ${service.bgGradient} opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-0`}></div>
+                    
+                    {/* Icon Container */}
+                    <motion.div
+                      className={`relative z-10 w-16 h-16 bg-gradient-to-br ${service.gradient} rounded-xl flex items-center justify-center mb-4 shadow-lg group-hover:scale-110 group-hover:rotate-6 transition-all duration-300`}
+                      whileHover={{ rotate: 360 }}
+                      transition={{ duration: 0.6 }}
+                    >
+                      <div className="text-white">
+                        {service.icon}
+                      </div>
+                    </motion.div>
+
+                    {/* Content */}
+                    <div className="relative z-10">
+                      <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-gray-800 transition-colors duration-300">
+                        {service.title}
+                      </h3>
+                      <p className="text-sm text-gray-600 leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
+                        {service.description}
+                      </p>
                     </div>
-                    <h3 className="text-lg font-bold text-gray-900 mb-2">
-                      {service.title}
-                    </h3>
-                    <p className="text-sm text-gray-600 leading-relaxed">
-                      {service.description}
-                    </p>
+
+                    {/* Animated Underline */}
+                    <div className={`absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r ${service.gradient} transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left`}></div>
                   </motion.div>
                 ))}
               </div>
@@ -383,25 +439,57 @@ const EventManagement = () => {
       </section>
 
       {/* Partners & Clients Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-6 sm:px-12 lg:px-24 xl:px-40">
+      <section className="py-20 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
+        {/* Decorative Background Elements */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute top-10 left-10 w-96 h-96 bg-orange-200/20 rounded-full mix-blend-multiply filter blur-3xl"></div>
+          <div className="absolute bottom-10 right-10 w-96 h-96 bg-blue-200/20 rounded-full mix-blend-multiply filter blur-3xl"></div>
+        </div>
+
+        <div className="container mx-auto px-6 sm:px-12 lg:px-24 xl:px-40 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-12"
+            transition={{ duration: 0.8 }}
+            className="text-center mb-16"
           >
-            <p className="text-sm font-semibold text-orange-500 mb-4 underline">
+            <motion.span
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="inline-block px-5 py-2 bg-orange-100 text-orange-600 font-bold rounded-full text-sm uppercase tracking-wider mb-6 shadow-sm"
+            >
               OUR PARTNERS & CLIENTS
-            </p>
-            <h2 className="text-4xl xl:text-5xl font-bold text-gray-900">
-              Together, We Create Magic.
+            </motion.span>
+            <h2 className="text-4xl xl:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-4 leading-tight">
+              Together, We Create{' '}
+              <span className="text-orange-500 relative">
+                Magic
+                <motion.span
+                  className="absolute -bottom-2 left-0 right-0 h-3 bg-orange-200/50 -z-10"
+                  initial={{ scaleX: 0 }}
+                  whileInView={{ scaleX: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8, delay: 0.3 }}
+                />
+              </span>
+              .
             </h2>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="text-lg text-gray-600 mt-4 max-w-2xl mx-auto"
+            >
+              Trusted by leading brands and organizations worldwide
+            </motion.p>
           </motion.div>
 
           {/* Clients Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 max-w-6xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 max-w-7xl mx-auto">
             {[
               'WILDLIFE RESERVES',
               'OTTOBOCK',
@@ -418,13 +506,38 @@ const EventManagement = () => {
             ].map((client, index) => (
               <motion.div
                 key={client}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
+                initial={{ opacity: 0, scale: 0.8, y: 20 }}
+                whileInView={{ opacity: 1, scale: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: index * 0.05 }}
-                className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow text-center flex items-center justify-center min-h-[100px] border border-gray-100"
+                transition={{ 
+                  duration: 0.5, 
+                  delay: index * 0.05,
+                  type: "spring",
+                  stiffness: 100
+                }}
+                whileHover={{ 
+                  scale: 1.1, 
+                  y: -8,
+                  rotate: [0, -2, 2, -2, 0],
+                }}
+                className="group relative bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 text-center flex items-center justify-center min-h-[120px] border border-gray-100 cursor-pointer overflow-hidden"
               >
-                <p className="text-sm font-semibold text-gray-900">{client}</p>
+                {/* Gradient Background on Hover */}
+                <div className="absolute inset-0 bg-gradient-to-br from-orange-50 via-white to-blue-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-0"></div>
+                
+                {/* Animated Border */}
+                <div className="absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-orange-300 transition-all duration-300"></div>
+                
+                {/* Content */}
+                <p className="text-sm font-bold text-gray-900 group-hover:text-orange-600 transition-colors duration-300 relative z-10 transform group-hover:scale-110">
+                  {client}
+                </p>
+                
+                {/* Decorative Corner Elements */}
+                <div className="absolute top-2 left-2 w-2 h-2 bg-orange-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute top-2 right-2 w-2 h-2 bg-orange-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute bottom-2 left-2 w-2 h-2 bg-orange-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute bottom-2 right-2 w-2 h-2 bg-orange-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </motion.div>
             ))}
           </div>

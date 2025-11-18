@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import HeroImg from '../../assets/1.png'
 import {motion} from 'framer-motion'
 import { slideUp } from '../../utility/animation'
+import { FiArrowRight } from 'react-icons/fi'
 
 const Hero = () => {
   return (
@@ -17,26 +18,45 @@ const Hero = () => {
             initial="initial" 
             animate='animate'  
             className='text-4xl xl:text-5xl font-bold'>
-            Unlock a Passion, Side Hustle, or New{" "}
-            <span className='text-gray-400 
-            underline'>Profession</span>
+           Grow Your Business with Smart Digital
+           {" "}
+            <span className='text-[#fdcd2d] 
+            underline'>Solutions</span>
             </motion.h1>
             <motion.p variants={slideUp(0.4)} 
             initial="initial" 
             animate='animate'  >
-              Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. 
-              Asperiores, pariatur? Deserunt aliquam, corrupti sapiente iure
-              dignissimos cumque fugit? Adipisci, 
-              fugiat veritatis provident illo eius eaque sequi
+             From branding to performance ads, we help you reach the right audience with measurable outcomes.
             </motion.p>
-            <Link to="/about">
+            <Link to="/about" className="inline-block">
               <motion.button
-              variants={slideUp(0.6)} 
-              initial="initial" 
-              animate='animate'  
-              className='primary-btn bg-gray-900
-              hover:bg-[#fdcd2d] duration-300'>More News</motion.button>
+                variants={slideUp(0.6)} 
+                initial="initial" 
+                animate='animate'
+                whileHover={{ scale: 1.05, boxShadow: "0 10px 30px rgba(253, 205, 45, 0.4)" }}
+                whileTap={{ scale: 0.98 }}
+                className='group relative px-8 py-4 bg-gray-900 text-white font-semibold text-lg rounded-lg
+                hover:bg-[#fdcd2d] hover:text-gray-900 transition-all duration-300 ease-in-out
+                shadow-lg hover:shadow-xl flex items-center gap-3 overflow-hidden
+                border-2 border-transparent hover:border-[#fdcd2d]'
+              >
+                <span className="relative z-10">More News</span>
+                <motion.span
+                  className="relative z-10"
+                  initial={{ x: 0 }}
+                  whileHover={{ x: 5 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <FiArrowRight className="w-5 h-5" />
+                </motion.span>
+                {/* Shine effect on hover */}
+                <motion.div
+                  className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent"
+                  initial={{ x: '-100%' }}
+                  whileHover={{ x: '100%' }}
+                  transition={{ duration: 0.6, ease: "easeInOut" }}
+                />
+              </motion.button>
             </Link>
            </div>
           {/*Hero Image Section */}

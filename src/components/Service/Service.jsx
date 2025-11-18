@@ -12,7 +12,7 @@ const Service = () => {
         whileInView={{opacity:1}}
         className='py-12 flex justify-between items-center'>
             <h1 className='text-4xl xl:text-5xl font-bold
-            max-w-[550px]'>How to Spark Your <br /> <span className='text-gray-400 
+            max-w-[550px]'>How to Spark Your <br /> <span className='text-[#fdcd2d]  
             underline'>Brand</span>
             </h1>
         </motion.div>
@@ -23,7 +23,8 @@ const Service = () => {
           <motion.div
           initial={{opacity:0,x:100}}
           whileInView={{opacity:1,x:0}}
-          transition={{duration:0.5,delay:0.2}}>
+          transition={{duration:0.5,delay:0.2}}
+          className='sm:row-span-2'>
             <img src={ServiceImg} alt="" className='w-[300px] mx-auto sm:w-full'/>
           </motion.div>
           <motion.div 
@@ -33,33 +34,45 @@ const Service = () => {
           className='max-w-[300px] mx-auto space-y-4 pt-20'>
             <img className='w-14' src={ServiceImg} alt="" />
             <p className='uppercase font-semibold
-            text-lg'>Discover and Strategy</p>
+            text-lg'>Discover</p>
             <p className='text-gray-500 pl-6 border-l-2'>
-             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ipsam molestiae minima in sed hic commodi fugit, tempora cum, harum, accusantium ratione fugiat maxime quis? Deleniti consequuntur iusto quod quaerat!
+            At Ravo, discovery is where clarity begins. We dive deep into your brand, your audience, and your goals to uncover meaningful insights. This foundation helps us create strategies and solutions that truly align with your vision.
             </p>
             </motion.div>
             <motion.div 
             initial={{opacity:0,x:100}}
             whileInView={{opacity:1,x:0}}
-            transition={{duration:0.5,delay:0.6}}
-            className='max-w-[300px] mx-auto space-y-4'>
+            transition={{duration:0.5,delay:0.4}}
+            className='max-w-[300px] mx-auto space-y-4 pt-20'>
             <img className='w-14' src={ServiceImg} alt="" />
             <p className='uppercase font-semibold
-            text-lg'>Execute</p>
+            text-lg'>Strategy</p>
             <p className='text-gray-500 pl-6 border-l-2'>
-             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ipsam molestiae minima in sed hic commodi fugit, tempora cum, harum, accusantium ratione fugiat maxime quis? Deleniti consequuntur iusto quod quaerat!
+            strategy means clarity. We focus on understanding your goals, shaping a clear direction, and creating simple, effective plans that lead to real results. Every move is intentional, every idea has purpose, and every decision pushes your brand forward with confidence.
             </p>
             </motion.div>
             <motion.div 
             initial={{opacity:0,x:100}}
             whileInView={{opacity:1,x:0}}
-            transition={{duration:0.5,delay:0.8}}
+            transition={{duration:0.5,delay:0.5}}
             className='max-w-[300px] mx-auto space-y-4'>
             <img className='w-14' src={ServiceImg} alt="" />
             <p className='uppercase font-semibold
             text-lg'>Launch</p>
             <p className='text-gray-500 pl-6 border-l-2'>
-             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ipsam molestiae minima in sed hic commodi fugit, tempora cum, harum, accusantium ratione fugiat maxime quis? Deleniti consequuntur iusto quod quaerat!
+            launching is more than going live, it’s delivering your brand to the world with confidence. We prepare every detail, refine every touchpoint, and ensure your launch creates the right impact from day one.
+            </p>
+            </motion.div>
+            <motion.div 
+            initial={{opacity:0,x:100}}
+            whileInView={{opacity:1,x:0}}
+            transition={{duration:0.5,delay:0.7}}
+            className='max-w-[300px] mx-auto space-y-4'>
+            <img className='w-14' src={ServiceImg} alt="" />
+            <p className='uppercase font-semibold
+            text-lg'>Execute</p>
+            <p className='text-gray-500 pl-6 border-l-2'>
+            Execution is where ideas turn into action. We bring strategy to life with precision, consistency, and attention to detail ensuring every step delivers real, measurable results for your brand.
             </p>
             </motion.div>
 

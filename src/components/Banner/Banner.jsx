@@ -21,7 +21,7 @@ const Banner = () => {
             Design is not what it looks like and 
             feels like, Design is how{" "}
             <br />
-            <span className='text-gray-400 
+            <span className='text-[#fdcd2d]  
             underline'>It Works</span>
             </motion.h1>
             

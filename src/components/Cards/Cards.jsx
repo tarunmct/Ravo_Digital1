@@ -25,7 +25,8 @@ const Cards = () => {
             </div>
             <p className='text-xl font-semibold'>Digital Marketing</p>
             <p className='text-sm text-black/80 leading-relaxed'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ut nihil nemo facere odio recusandae debitis magni consequuntur fuga voluptas.
+            We have done the practice of promoting products or services using digital channels like social media, search engines, websites, email, and online advertising.
+            We focuse on reaching the right audience at the right time,through data-driven strategies.
             </p>
             <Link to="/digital-marketing" className='hover:text-[#fdcd2d] font-medium transition-colors'>Learn More</Link>
           </motion.div>
@@ -43,7 +44,8 @@ const Cards = () => {
             </div>
             <p className='text-xl font-semibold'>IT Services</p>
             <p className='text-sm text-black/80 leading-relaxed'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ut nihil nemo facere odio recusandae debitis magni consequuntur fuga voluptas.
+            We provide Services refer to the planning, implementation, management, and support of technology systems that help businesses run efficiently.
+            We ensure smooth operations, secure data handling, and continuous business growth through reliable tech solutions.
             </p>
             <Link to="/it-services" className='hover:text-[#fdcd2d] font-medium transition-colors'>Learn More</Link>
           </motion.div>
@@ -61,7 +63,8 @@ const Cards = () => {
             </div>
             <p className='text-xl font-semibold'>Event Management</p>
             <p className='text-sm text-black/80 leading-relaxed'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ut nihil nemo facere odio recusandae debitis magni consequuntur fuga voluptas.
+            We are hero of planning, organizing, and executing events such as corporate meetings, weddings, parties, conferences, and brand activations.
+            We  involves coordinating logistics, design, vendors, budgeting, timelines, and overall event experience.
             </p>
             <Link to="/event-management" className='hover:text-[#fdcd2d] font-medium transition-colors'>Learn More</Link>
           </motion.div>

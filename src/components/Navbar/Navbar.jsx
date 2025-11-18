@@ -35,8 +35,7 @@ const Navbar = () => {
     { id: 1, title: 'Home', path: '/' },
     { id: 2, title: 'About', path: '/about' },
     { id: 3, title: 'Services', path: '#' },
-    { id: 4, title: 'Frames', path: '/event-management' },
-    { id: 5, title: 'Contact', path: '/contact' },
+    { id: 4, title: 'Contact', path: '/contact' },
   ];
 
   const serviceLinks = [
