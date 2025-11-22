@@ -215,14 +215,15 @@ const ITServices = () => {
             >
               <motion.div
                 animate={{ 
-                  rotate: [0, -2, 2, -1, 1, 0],
-                  y: [0, -10, 0],
+                  y: [0, -8, 0],
                 }}
                 transition={{ 
-                  duration: 6,
+                  duration: 4,
                   repeat: Infinity,
-                  ease: "easeInOut"
+                  ease: "easeInOut",
+                  repeatType: "reverse"
                 }}
+                style={{ willChange: 'transform' }}
                 className="relative w-full max-w-lg"
               >
                 <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-6 shadow-2xl border border-gray-700">
@@ -230,20 +231,23 @@ const ITServices = () => {
                     src={ITServicesImage}
                     alt="IT Services" 
                     className="w-full h-auto rounded-xl shadow-lg"
+                    loading="eager"
                   />
                 </div>
                 
-                {/* Floating elements */}
+                {/* Floating elements - Simplified animations */}
                 <motion.div
-                  animate={{ y: [0, -15, 0] }}
-                  transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                  animate={{ y: [0, -10, 0] }}
+                  transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", repeatType: "reverse" }}
+                  style={{ willChange: 'transform' }}
                   className="absolute -top-3 -right-3 bg-[#fdcd2d] text-gray-900 px-4 py-2 rounded-lg font-bold shadow-lg z-10"
                 >
                   🚀 Innovative
                 </motion.div>
                 <motion.div
-                  animate={{ y: [0, 10, 0] }}
-                  transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+                  animate={{ y: [0, 8, 0] }}
+                  transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut", repeatType: "reverse", delay: 0.5 }}
+                  style={{ willChange: 'transform' }}
                   className="absolute -bottom-3 -left-3 bg-blue-500 text-white px-4 py-2 rounded-lg font-bold shadow-lg z-10"
                 >
                   ⚡ Fast
