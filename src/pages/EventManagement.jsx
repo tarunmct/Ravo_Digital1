@@ -260,7 +260,8 @@ const EventManagement = () => {
                     whileInView={{ opacity: 1, y: 0, scale: 1 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
-                    whileHover={{ scale: 1.05, y: -8 }}
+                    whileHover={{ scale: 1.03, y: -5 }}
+                    style={{ willChange: 'transform' }}
                     className="group relative bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-300 cursor-pointer overflow-hidden"
                   >
                     {/* Background Gradient on Hover */}
@@ -268,9 +269,8 @@ const EventManagement = () => {
                     
                     {/* Icon Container */}
                     <motion.div
-                      className={`relative z-10 w-16 h-16 bg-gradient-to-br ${service.gradient} rounded-xl flex items-center justify-center mb-4 shadow-lg group-hover:scale-110 group-hover:rotate-6 transition-all duration-300`}
-                      whileHover={{ rotate: 360 }}
-                      transition={{ duration: 0.6 }}
+                      className={`relative z-10 w-16 h-16 bg-gradient-to-br ${service.gradient} rounded-xl flex items-center justify-center mb-4 shadow-lg group-hover:scale-110 transition-all duration-300`}
+                      style={{ willChange: 'transform' }}
                     >
                       <div className="text-white">
                         {service.icon}

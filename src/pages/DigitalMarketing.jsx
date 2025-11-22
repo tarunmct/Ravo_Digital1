@@ -107,23 +107,16 @@ const DigitalMarketing = () => {
               
               <motion.div
                 className="relative bg-white rounded-3xl p-8 shadow-2xl overflow-hidden border border-gray-100"
-                animate={{ 
-                  rotate: [0, 2, -2, 1.5, -1.5, 0],
-                }}
-                transition={{ 
-                  duration: 6,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                  delay: 1
-                }}
+                style={{ willChange: 'transform' }}
               >
                 <div className="relative overflow-hidden rounded-2xl">
                   <motion.img 
                     src={DigitalMarketingImg} 
                     alt="Digital Marketing" 
                     className="w-full h-auto object-cover"
-                    whileHover={{ scale: 1.05 }}
-                    transition={{ duration: 0.5 }}
+                    whileHover={{ scale: 1.03 }}
+                    transition={{ duration: 0.4 }}
+                    loading="eager"
                   />
                   {/* Overlay gradient on hover */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -302,8 +295,9 @@ const DigitalMarketing = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
-                    whileHover={{ scale: 1.05, y: -5 }}
-                    className="group bg-white rounded-xl p-5 shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-300 cursor-pointer"
+                    whileHover={{ scale: 1.03, y: -5 }}
+                    style={{ willChange: 'transform' }}
+                    className="group relative bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-300 cursor-pointer overflow-hidden"
                   >
                     <div className={`w-12 h-12 bg-gradient-to-br ${benefit.color} rounded-lg flex items-center justify-center mb-3 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-md`}>
                       <benefit.icon className="w-6 h-6 text-white" />
