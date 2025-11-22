@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import Logo from '../../assets/0.png';
 import { 
   FaFacebook, 
   FaTwitter, 
@@ -74,9 +75,11 @@ const Footer = () => {
               whileInView={{ opacity: 1, y: 0 }}
               className="mb-6"
             >
-              <h3 className="text-2xl font-bold bg-gradient-to-r from-[#fdcd2d] to-yellow-400 bg-clip-text text-transparent">
-                Ravo Digitals
-              </h3>
+              <img 
+                src={Logo} 
+                alt="Ravo Digitals Logo" 
+                className="h-16 w-auto"
+              />
             </motion.div>
             
             <p className="text-gray-300 leading-relaxed mb-6 text-balance">

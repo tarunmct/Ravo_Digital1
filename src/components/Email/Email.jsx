@@ -15,8 +15,8 @@ const Email = () => {
       <motion.div 
       initial={{opacity:0, scale:0.5}}
       whileInView={{opacity:1,scale:1}}
-      className="container mx-auto text-center space-y-10
-      py-10">
+      className="container mx-auto text-center space-y-6
+      py-5">
         <div className='space-y-4'>
         <p className='text-3xl md:text-4xl
         font-bold'>Join Our email</p>

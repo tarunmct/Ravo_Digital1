@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { slideUp } from '../utility/animation';
 import { Link } from 'react-router-dom';
-import { FiCheckCircle, FiTrendingUp, FiBarChart2, FiUsers, FiTarget, FiClock } from 'react-icons/fi';
+import { FiCheckCircle, FiTrendingUp, FiBarChart2, FiUsers, FiTarget, FiClock, FiSearch, FiSmartphone, FiDollarSign, FiEdit, FiMail, FiPieChart } from 'react-icons/fi';
 import DigitalMarketingImg from '../assets/dm3.jpeg';
 
 const DigitalMarketing = () => {
@@ -10,32 +10,44 @@ const DigitalMarketing = () => {
     {
       title: 'Search Engine Optimization (SEO)',
       description: 'Boost your website visibility and rank higher on search engines with our proven SEO strategies.',
-      icon: '🔍',
+      icon: FiSearch,
+      gradient: 'from-blue-500 to-cyan-500',
+      bgGradient: 'from-blue-50 to-cyan-50',
     },
     {
       title: 'Social Media Marketing',
       description: 'Engage your audience across all platforms with compelling content and strategic campaigns.',
-      icon: '📱',
+      icon: FiSmartphone,
+      gradient: 'from-pink-500 to-rose-500',
+      bgGradient: 'from-pink-50 to-rose-50',
     },
     {
       title: 'Pay-Per-Click (PPC) Advertising',
       description: 'Maximize ROI with targeted PPC campaigns that drive qualified leads to your business.',
-      icon: '📊',
+      icon: FiDollarSign,
+      gradient: 'from-green-500 to-emerald-500',
+      bgGradient: 'from-green-50 to-emerald-50',
     },
     {
       title: 'Content Marketing',
       description: 'Create valuable, engaging content that attracts and converts your target audience.',
-      icon: '✍️',
+      icon: FiEdit,
+      gradient: 'from-purple-500 to-indigo-500',
+      bgGradient: 'from-purple-50 to-indigo-50',
     },
     {
       title: 'Email Marketing',
       description: 'Build lasting relationships with automated email campaigns that nurture leads.',
-      icon: '📧',
+      icon: FiMail,
+      gradient: 'from-orange-500 to-amber-500',
+      bgGradient: 'from-orange-50 to-amber-50',
     },
     {
       title: 'Analytics & Reporting',
       description: 'Track performance with detailed analytics and actionable insights for continuous improvement.',
-      icon: '📈',
+      icon: FiPieChart,
+      gradient: 'from-[#fdcd2d] to-yellow-500',
+      bgGradient: 'from-yellow-50 to-amber-50',
     },
   ];
 
@@ -49,9 +61,9 @@ const DigitalMarketing = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white pt-20">
+    <div className="min-h-screen bg-white pt-8">
       {/* Hero Section */}
-      <section className="container mx-auto px-6 sm:px-12 lg:px-24 xl:px-40 py-20">
+      <section className="container mx-auto px-6 sm:px-12 lg:px-24 xl:px-40 py-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div
             variants={slideUp(0.2)}
@@ -147,11 +159,29 @@ const DigitalMarketing = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow"
+                whileHover={{ y: -8, scale: 1.02 }}
+                className="group relative bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer overflow-hidden border border-gray-100"
               >
-                <div className="text-4xl mb-4">{service.icon}</div>
-                <h3 className="text-xl font-bold mb-3">{service.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{service.description}</p>
+                {/* Background Gradient on Hover */}
+                <div className={`absolute inset-0 bg-gradient-to-br ${service.bgGradient} opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-0`}></div>
+                
+                {/* Icon Container */}
+                <motion.div
+                  className={`relative z-10 w-16 h-16 bg-gradient-to-br ${service.gradient} rounded-xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 group-hover:rotate-6 transition-all duration-300`}
+                  whileHover={{ rotate: 360 }}
+                  transition={{ duration: 0.6 }}
+                >
+                  <service.icon className="w-8 h-8 text-white" />
+                </motion.div>
+                
+                {/* Content */}
+                <div className="relative z-10">
+                  <h3 className="text-xl font-bold mb-3 text-gray-900 group-hover:text-gray-800 transition-colors duration-300">{service.title}</h3>
+                  <p className="text-gray-600 leading-relaxed group-hover:text-gray-700 transition-colors duration-300">{service.description}</p>
+                </div>
+                
+                {/* Animated Bottom Border */}
+                <div className={`absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r ${service.gradient} transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left`}></div>
               </motion.div>
             ))}
           </div>

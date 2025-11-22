@@ -12,11 +12,12 @@
 
   html, body, #root {
     min-height: 100vh;
+    overflow-x: hidden;
   }
 
   body {
     font-family: 'Poppins', sans-serif;
-    @apply antialiased bg-white text-secondary;
+    @apply antialiased bg-white text-secondary overflow-x-hidden;
   }
 }
 

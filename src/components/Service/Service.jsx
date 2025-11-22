@@ -1,16 +1,20 @@
 import React from 'react'
 import ServiceImg from '../../assets/2.png'
+import DiscoverImg from '../../assets/Discover.png'
+import StrategyImg from '../../assets/Strategy.png'
+import LaunchImg from '../../assets/Launch.png'
+import ExecuteImg from '../../assets/Execute.png'
 import { motion } from 'framer-motion'
 
 const Service = () => {
   return (
     <>
-    <div className="container mx-auto py-12">
+    <div className="container mx-auto py-6 overflow-hidden">
         {/*Header Section*/}
         <motion.div 
         initial={{opacity:0}}
         whileInView={{opacity:1}}
-        className='py-12 flex justify-between items-center'>
+        className='py-6 flex justify-between items-center'>
             <h1 className='text-4xl xl:text-5xl font-bold
             max-w-[550px]'>How to Spark Your <br /> <span className='text-[#fdcd2d]  
             underline'>Brand</span>
@@ -25,14 +29,14 @@ const Service = () => {
           whileInView={{opacity:1,x:0}}
           transition={{duration:0.5,delay:0.2}}
           className='sm:row-span-2'>
-            <img src={ServiceImg} alt="" className='w-[300px] mx-auto sm:w-full'/>
+            <img src={ServiceImg} alt="Digital marketing services illustration" className='w-[300px] mx-auto sm:w-full'/>
           </motion.div>
           <motion.div 
           initial={{opacity:0,x:100}}
           whileInView={{opacity:1,x:0}}
           transition={{duration:0.5,delay:0.4}}
-          className='max-w-[300px] mx-auto space-y-4 pt-20'>
-            <img className='w-14' src={ServiceImg} alt="" />
+          className='max-w-[300px] mx-auto pt-10'>
+            <img className='w-24 mb-[-10px]' src={DiscoverImg} alt="Discover phase icon" />
             <p className='uppercase font-semibold
             text-lg'>Discover</p>
             <p className='text-gray-500 pl-6 border-l-2'>
@@ -43,8 +47,8 @@ const Service = () => {
             initial={{opacity:0,x:100}}
             whileInView={{opacity:1,x:0}}
             transition={{duration:0.5,delay:0.4}}
-            className='max-w-[300px] mx-auto space-y-4 pt-20'>
-            <img className='w-14' src={ServiceImg} alt="" />
+            className='max-w-[300px] mx-auto pt-10'>
+            <img className='w-24 mb-[-10px]' src={StrategyImg} alt="Strategy phase icon" />
             <p className='uppercase font-semibold
             text-lg'>Strategy</p>
             <p className='text-gray-500 pl-6 border-l-2'>
@@ -55,8 +59,8 @@ const Service = () => {
             initial={{opacity:0,x:100}}
             whileInView={{opacity:1,x:0}}
             transition={{duration:0.5,delay:0.5}}
-            className='max-w-[300px] mx-auto space-y-4'>
-            <img className='w-14' src={ServiceImg} alt="" />
+            className='max-w-[300px] mx-auto'>
+            <img className='w-24 mb-[-10px]' src={LaunchImg} alt="Launch phase icon" />
             <p className='uppercase font-semibold
             text-lg'>Launch</p>
             <p className='text-gray-500 pl-6 border-l-2'>
@@ -67,8 +71,8 @@ const Service = () => {
             initial={{opacity:0,x:100}}
             whileInView={{opacity:1,x:0}}
             transition={{duration:0.5,delay:0.7}}
-            className='max-w-[300px] mx-auto space-y-4'>
-            <img className='w-14' src={ServiceImg} alt="" />
+            className='max-w-[300px] mx-auto'>
+            <img className='w-24 mb-[-10px]' src={ExecuteImg} alt="Execute phase icon" />
             <p className='uppercase font-semibold
             text-lg'>Execute</p>
             <p className='text-gray-500 pl-6 border-l-2'>

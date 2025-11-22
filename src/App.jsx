@@ -1,29 +1,37 @@
 // src/App.jsx
-import React from 'react'
+import React, { Suspense, lazy } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar/Navbar'
-import Hero from './components/Hero/Hero'
-import Service from './components/Service/Service'
-import Banner from './components/Banner/Banner'
-import Cards from './components/Cards/Cards'
-import Banner2 from './components/Banner/Banner2'
-import Email from './components/Email/Email'
 import Footer from './components/Footer/Footer'
+import WhatsAppWidget from './components/WhatsAppWidget/WhatsAppWidget'
 
-// Import the missing 'AboutUs.jsx' component
-import AboutUs from './components/About/AboutUs'
-
-// Import the service pages (assuming these are in a 'pages' directory)
-import DigitalMarketing from './pages/DigitalMarketing'
-import ITServices from './pages/ITServices'
-import EventManagement from './pages/EventManagement'
+// Lazy load page components for better performance
+const Hero = lazy(() => import('./components/Hero/Hero'))
+const Service = lazy(() => import('./components/Service/Service'))
+const Banner = lazy(() => import('./components/Banner/Banner'))
+const Cards = lazy(() => import('./components/Cards/Cards'))
+const Banner2 = lazy(() => import('./components/Banner/Banner2'))
+const Email = lazy(() => import('./components/Email/Email'))
+const AboutUs = lazy(() => import('./components/About/AboutUs'))
+const DigitalMarketing = lazy(() => import('./pages/DigitalMarketing'))
+const ITServices = lazy(() => import('./pages/ITServices'))
+const EventManagement = lazy(() => import('./pages/EventManagement'))
+const NotFound = lazy(() => import('./pages/NotFound'))
 
 const App = () => {
   return (
     <Router>
-      <main>
+      <main className="overflow-x-hidden">
         <Navbar />
-        <Routes>
+        <Suspense fallback={
+          <div className="min-h-screen flex items-center justify-center bg-white">
+            <div className="text-center">
+              <div className="inline-block animate-spin rounded-full h-12 w-12 border-4 border-[#fdcd2d] border-t-transparent"></div>
+              <p className="mt-4 text-gray-600 font-medium">Loading...</p>
+            </div>
+          </div>
+        }>
+          <Routes>
         {/* Home Page */}
         <Route path="/" element={
           <>
@@ -48,8 +56,13 @@ const App = () => {
         <Route path="/event-management" element={<EventManagement />} />
         {/* Note: The 'Frames' link in Navbar also uses '/event-management' path. */}
         
-        </Routes>
+        {/* 404 Catch-all Route */}
+        <Route path="*" element={<NotFound />} />
+        
+          </Routes>
+        </Suspense>
         <Footer />
+        <WhatsAppWidget />
       </main>
     </Router>
   )

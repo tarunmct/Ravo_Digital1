@@ -59,7 +59,7 @@ const Navbar = () => {
       transition={{ duration: 0.6, ease: 'easeOut' }}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-16">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex justify-between items-center h-24">
           {/* Logo */}
           <Link 
             to="/" 
@@ -68,7 +68,7 @@ const Navbar = () => {
             <motion.img 
               src={Logo} 
               alt="Ravo Digitals Logo" 
-              className="h-12 w-auto transition-transform duration-300 group-hover:scale-105" 
+              className="h-16 w-auto transition-transform duration-300 group-hover:scale-105" 
               whileHover={{ scale: 1.05 }}
             />
           </Link>
@@ -84,7 +84,7 @@ const Navbar = () => {
                     onMouseLeave={() => setIsDropdownOpen(false)}
                   >
                     <button
-                      className={`px-4 py-2 text-sm font-semibold tracking-wide transition-all duration-300 rounded-lg ${
+                      className={`px-4 py-2 text-base font-semibold tracking-wide transition-all duration-300 rounded-lg ${
                         isServiceActive
                           ? 'text-[#fdcd2d]'
                           : 'text-gray-700 hover:text-[#fdcd2d]'
@@ -118,7 +118,7 @@ const Navbar = () => {
                           animate={{ opacity: 1, y: 0, scale: 1 }}
                           exit={{ opacity: 0, y: -10, scale: 0.95 }}
                           transition={{ duration: 0.2 }}
-                          className="absolute top-full left-0 mt-2 w-56 bg-white rounded-xl shadow-2xl border border-gray-100 overflow-hidden py-1"
+                          className="absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-2xl border border-gray-100 overflow-hidden py-1"
                           onClick={(e) => e.stopPropagation()}
                         >
                           {serviceLinks.map((service, index) => (
@@ -126,7 +126,7 @@ const Navbar = () => {
                               key={service.path}
                               to={service.path}
                               onClick={() => setIsDropdownOpen(false)}
-                              className={`block px-4 py-3 text-sm font-medium transition-all duration-200 relative group ${
+                              className={`block px-4 py-3 text-base font-medium transition-all duration-200 relative group ${
                                 isActive(service.path)
                                   ? 'text-[#fdcd2d] bg-yellow-50'
                                   : 'text-gray-700 hover:text-[#fdcd2d] hover:bg-gray-50'
@@ -158,7 +158,7 @@ const Navbar = () => {
                 ) : (
                   <Link
                     to={link.path}
-                    className="relative px-4 py-2 text-sm font-semibold tracking-wide transition-all duration-300 rounded-lg group"
+                    className="relative px-4 py-2 text-base font-semibold tracking-wide transition-all duration-300 rounded-lg group"
                     onClick={() => setIsDropdownOpen(false)}
                   >
                     <span
@@ -231,7 +231,7 @@ const Navbar = () => {
                       <div>
                         <button
                           onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                          className={`w-full flex items-center justify-between px-4 py-3 text-sm font-semibold rounded-lg transition-colors ${
+                          className={`w-full flex items-center justify-between px-4 py-3 text-base font-semibold rounded-lg transition-colors ${
                             isServiceActive
                               ? 'text-[#fdcd2d] bg-yellow-50'
                               : 'text-gray-700 hover:bg-gray-50'
@@ -264,7 +264,7 @@ const Navbar = () => {
                                         setIsDropdownOpen(false);
                                         setIsMobileMenuOpen(false);
                                       }}
-                                      className={`block px-4 py-2.5 text-sm font-medium rounded-lg transition-colors ${
+                                      className={`block px-4 py-2.5 text-base font-medium rounded-lg transition-colors ${
                                         isActive(service.path)
                                           ? 'text-[#fdcd2d] bg-yellow-50'
                                           : 'text-gray-600 hover:text-[#fdcd2d] hover:bg-gray-50'
@@ -283,7 +283,7 @@ const Navbar = () => {
                       <Link
                         to={link.path}
                         onClick={() => setIsMobileMenuOpen(false)}
-                        className={`block px-4 py-3 text-sm font-semibold rounded-lg transition-colors ${
+                        className={`block px-4 py-3 text-base font-semibold rounded-lg transition-colors ${
                           isActive(link.path)
                             ? 'text-[#fdcd2d] bg-yellow-50'
                             : 'text-gray-700 hover:bg-gray-50 hover:text-[#fdcd2d]'

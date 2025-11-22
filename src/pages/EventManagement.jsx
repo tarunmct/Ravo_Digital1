@@ -2,6 +2,14 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { slideUp } from '../utility/animation';
 import { Link } from 'react-router-dom';
+import ashokLeyland from '../assets/ashokleyland.png';
+import blackThunder from '../assets/black thunder.png';
+import carCare from '../assets/car care.png';
+import greenTrends from '../assets/greentrends.png';
+import khalids from '../assets/khalids.png';
+import lmw from '../assets/lmw.png';
+import max from '../assets/max.png';
+import thalappakati from '../assets/thalappakati.jpeg';
 
 const EventManagement = () => {
   const services = [
@@ -86,7 +94,7 @@ const EventManagement = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="bg-black min-h-screen overflow-hidden">
       {/* Hero Section with Background Image */}
       <section 
         className="relative pt-20 min-h-[90vh] flex items-center justify-center overflow-hidden"
@@ -114,11 +122,11 @@ const EventManagement = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
-              className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-serif font-bold text-white mb-6 leading-tight"
-              style={{ fontFamily: 'Georgia, "Times New Roman", serif' }}
+              className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-serif font-bold text-white mb-8 leading-tight tracking-tight"
+              style={{ fontFamily: 'Playfair Display, serif' }}
             >
               Your Vision,<br />
-              <span className="text-white">Our Expertise</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fdcd2d] to-yellow-200">Our Expertise</span>
             </motion.h1>
             
             {/* Subheading */}
@@ -126,7 +134,7 @@ const EventManagement = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
-              className="text-lg md:text-xl lg:text-2xl text-white max-w-3xl mx-auto leading-relaxed font-light"
+              className="text-xl md:text-2xl lg:text-3xl text-gray-200 max-w-4xl mx-auto leading-relaxed font-light tracking-wide"
             >
               We turn moments into masterpieces. From intimate celebrations to grand corporate affairs, experience flawless event management.
             </motion.p>
@@ -140,9 +148,15 @@ const EventManagement = () => {
             >
               <Link
                 to="/contact"
-                className="inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold text-lg px-10 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-xl"
+                className="group relative inline-flex items-center justify-center px-12 py-5 text-lg font-bold text-gray-900 transition-all duration-300 bg-[#fdcd2d] rounded-full overflow-hidden hover:scale-105 hover:shadow-[0_0_40px_rgba(253,205,45,0.6)]"
               >
-                Plan Your Event Now
+                <span className="absolute inset-0 w-full h-full bg-white/20 group-hover:translate-x-full ease-out duration-500 transition-transform skew-x-12 origin-left" />
+                <span className="relative flex items-center gap-2">
+                  Plan Your Event Now
+                  <svg className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </span>
               </Link>
             </motion.div>
           </motion.div>
@@ -150,7 +164,7 @@ const EventManagement = () => {
       </section>
 
       {/* Seamlessly Executed Events Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white overflow-hidden">
         <div className="container mx-auto px-6 sm:px-12 lg:px-24 xl:px-40">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
@@ -167,7 +181,7 @@ const EventManagement = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
-                className="inline-block px-4 py-2 bg-orange-100 text-orange-600 font-semibold rounded-full text-sm uppercase tracking-wide"
+                className="inline-block px-4 py-2 bg-yellow-100 text-yellow-800 font-semibold rounded-full text-sm uppercase tracking-wide"
               >
                 Our Expertise
               </motion.span>
@@ -176,10 +190,10 @@ const EventManagement = () => {
               <div>
                 <h2 className="text-4xl xl:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-4 leading-tight">
                   Seamlessly Executed <br />
-                  <span className="text-orange-500 relative">
+                  <span className="text-[#fdcd2d] relative">
                     Events
                     <motion.span
-                      className="absolute -bottom-2 left-0 right-0 h-3 bg-orange-200/50 -z-10"
+                      className="absolute -bottom-2 left-0 right-0 h-3 bg-[#fdcd2d]/30 -z-10"
                       initial={{ scaleX: 0 }}
                       whileInView={{ scaleX: 1 }}
                       viewport={{ once: true }}
@@ -442,8 +456,8 @@ const EventManagement = () => {
       <section className="py-20 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
         {/* Decorative Background Elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-10 left-10 w-96 h-96 bg-orange-200/20 rounded-full mix-blend-multiply filter blur-3xl"></div>
-          <div className="absolute bottom-10 right-10 w-96 h-96 bg-blue-200/20 rounded-full mix-blend-multiply filter blur-3xl"></div>
+          <div className="absolute top-10 left-10 w-96 h-96 bg-[#fdcd2d]/10 rounded-full mix-blend-multiply filter blur-3xl"></div>
+          <div className="absolute bottom-10 right-10 w-96 h-96 bg-blue-200/10 rounded-full mix-blend-multiply filter blur-3xl"></div>
         </div>
 
         <div className="container mx-auto px-6 sm:px-12 lg:px-24 xl:px-40 relative z-10">
@@ -459,16 +473,16 @@ const EventManagement = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="inline-block px-5 py-2 bg-orange-100 text-orange-600 font-bold rounded-full text-sm uppercase tracking-wider mb-6 shadow-sm"
+              className="inline-block px-5 py-2 bg-[#fdcd2d]/10 text-[#d4a017] font-bold rounded-full text-sm uppercase tracking-wider mb-6 shadow-sm border border-[#fdcd2d]/20"
             >
               OUR PARTNERS & CLIENTS
             </motion.span>
             <h2 className="text-4xl xl:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-4 leading-tight">
               Together, We Create{' '}
-              <span className="text-orange-500 relative">
+              <span className="text-[#fdcd2d] relative inline-block">
                 Magic
                 <motion.span
-                  className="absolute -bottom-2 left-0 right-0 h-3 bg-orange-200/50 -z-10"
+                  className="absolute -bottom-2 left-0 right-0 h-3 bg-[#fdcd2d]/30 -z-10 rounded-full"
                   initial={{ scaleX: 0 }}
                   whileInView={{ scaleX: 1 }}
                   viewport={{ once: true }}
@@ -488,25 +502,23 @@ const EventManagement = () => {
             </motion.p>
           </motion.div>
 
+
+
           {/* Clients Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 max-w-7xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-7xl mx-auto items-center">
             {[
-              'WILDLIFE RESERVES',
-              'OTTOBOCK',
-              'MELBOURNE',
-              'MARTIN',
-              'Q EXPERTTEST',
-              'METRO',
-              'EXPERIAN',
-              'INVIXIUM',
-              'ANDAL',
-              'CUNNINGHAM',
-              'PAREXEL',
-              'ARANCA',
+              { name: 'Ashok Leyland', logo: ashokLeyland },
+              { name: 'Black Thunder', logo: blackThunder },
+              { name: 'Car Care', logo: carCare },
+              { name: 'Green Trends', logo: greenTrends },
+              { name: 'Khalids', logo: khalids },
+              { name: 'LMW', logo: lmw },
+              { name: 'Max', logo: max },
+              { name: 'Thalappakati', logo: thalappakati },
             ].map((client, index) => (
               <motion.div
-                key={client}
-                initial={{ opacity: 0, scale: 0.8, y: 20 }}
+                key={client.name}
+                initial={{ opacity: 0, scale: 0.9, y: 20 }}
                 whileInView={{ opacity: 1, scale: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ 
@@ -516,28 +528,27 @@ const EventManagement = () => {
                   stiffness: 100
                 }}
                 whileHover={{ 
-                  scale: 1.1, 
-                  y: -8,
-                  rotate: [0, -2, 2, -2, 0],
+                  scale: 1.05, 
+                  y: -5,
                 }}
-                className="group relative bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 text-center flex items-center justify-center min-h-[120px] border border-gray-100 cursor-pointer overflow-hidden"
+                className="group relative bg-white rounded-2xl p-4 shadow-lg hover:shadow-2xl transition-all duration-300 text-center flex items-center justify-center h-40 border border-gray-100 cursor-pointer overflow-hidden"
               >
                 {/* Gradient Background on Hover */}
-                <div className="absolute inset-0 bg-gradient-to-br from-orange-50 via-white to-blue-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-0"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-[#fdcd2d]/10 via-white to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 
                 {/* Animated Border */}
-                <div className="absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-orange-300 transition-all duration-300"></div>
+                <div className="absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-[#fdcd2d]/50 transition-all duration-300"></div>
                 
-                {/* Content */}
-                <p className="text-sm font-bold text-gray-900 group-hover:text-orange-600 transition-colors duration-300 relative z-10 transform group-hover:scale-110">
-                  {client}
-                </p>
+                {/* Logo Image */}
+                <img 
+                  src={client.logo} 
+                  alt={client.name} 
+                  className="w-full h-full object-contain p-2 filter grayscale group-hover:grayscale-0 transition-all duration-500 relative z-10 transform group-hover:scale-110"
+                />
                 
                 {/* Decorative Corner Elements */}
-                <div className="absolute top-2 left-2 w-2 h-2 bg-orange-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div className="absolute top-2 right-2 w-2 h-2 bg-orange-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div className="absolute bottom-2 left-2 w-2 h-2 bg-orange-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div className="absolute bottom-2 right-2 w-2 h-2 bg-orange-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute top-0 left-0 w-0 h-0 border-t-[3px] border-l-[3px] border-[#fdcd2d] rounded-tl-lg opacity-0 group-hover:opacity-100 group-hover:w-6 group-hover:h-6 transition-all duration-300"></div>
+                <div className="absolute bottom-0 right-0 w-0 h-0 border-b-[3px] border-r-[3px] border-[#fdcd2d] rounded-br-lg opacity-0 group-hover:opacity-100 group-hover:w-6 group-hover:h-6 transition-all duration-300"></div>
               </motion.div>
             ))}
           </div>

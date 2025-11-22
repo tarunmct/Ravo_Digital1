@@ -7,11 +7,11 @@ import { slideUp } from '../../utility/animation'
 const Banner = () => {
   return (
     <>
-      <div className="container mx-auto py-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 min-h-[600px]">
+      <div className="container mx-auto py-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 min-h-[500px]">
           {/*Text Content Section */}
           <div className='space-y-8 flex flex-col justify-center
-          items-center text-center md:text-left py-20 px-10 md:pr-10 md:py-0 md:px-0 md:items-start'>
+          items-center text-center md:text-left py-10 px-10 md:pr-10 md:py-0 md:px-0 md:items-start'>
             <motion.h1 
             variants={slideUp(0.2)} 
             initial="initial" 

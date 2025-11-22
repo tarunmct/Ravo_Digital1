@@ -5,8 +5,8 @@ import {motion} from 'framer-motion'
 const Banner2 = () => {
   return (
     <>
-      <div className="container mx-auto py-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 min-h-[600px]">
+      <div className="container mx-auto py-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 min-h-[500px]">
           {/*Hero Image Section */}
           <div className='flex justify-center
           items-center'>
@@ -28,7 +28,7 @@ const Banner2 = () => {
            initial={{opacity:0,x:100}}
            whileInView={{opacity:1,x:0}}
            transition={{duration:0.5,delay:0.4}} 
-          className='text-center p-6 py-20 lg:px-32 w-full overflow-hidden'>
+          className='text-center p-6 py-10 lg:px-32 w-full overflow-hidden'>
           <h1 className='text-2xl sm:text-4xl font-bold mb-2 text-center'>Contact  
       <span className='underline underline-offset-4
       decoration-1 font-light'>With Us</span></h1>
