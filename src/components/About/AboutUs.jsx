@@ -9,10 +9,10 @@ const AboutUs = () => {
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       {/* Hero Section */}
       <section className="relative py-24 bg-gradient-to-br from-yellow-50 via-white to-blue-50 overflow-hidden">
-        {/* Decorative Background Elements */}
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute -top-40 -right-40 w-80 h-80 bg-yellow-200 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob"></div>
-          <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob animation-delay-2000"></div>
+        {/* Decorative Background Elements - Simplified */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute -top-40 -right-40 w-80 h-80 bg-yellow-200 rounded-full mix-blend-multiply filter blur-xl opacity-20"></div>
+          <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-20"></div>
         </div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -137,7 +137,8 @@ const AboutUs = () => {
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: 0.8 + index * 0.1 }}
-                    whileHover={{ scale: 1.05, y: -5 }}
+                    whileHover={{ scale: 1.03, y: -3 }}
+                    style={{ willChange: 'transform' }}
                     className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 group"
                   >
                     <div className={`w-14 h-14 bg-gradient-to-br ${stat.color} rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
@@ -171,23 +172,15 @@ const AboutUs = () => {
                 
                 <motion.div 
                   className="relative bg-white rounded-3xl p-6 shadow-2xl overflow-hidden border border-gray-100"
-                  animate={{ 
-                    rotate: [0, 2, -2, 1.5, -1.5, 0],
-                  }}
-                  transition={{ 
-                    duration: 6,
-                    repeat: Infinity,
-                    ease: "easeInOut",
-                    delay: 1
-                  }}
+                  style={{ willChange: 'transform' }}
                 >
                   <div className="relative overflow-hidden rounded-2xl">
                     <motion.img 
                       src={AboutImg} 
                       alt="Ravo Digitals Team" 
                       className="w-full h-auto object-cover"
-                      whileHover={{ scale: 1.05 }}
-                      transition={{ duration: 0.5 }}
+                      whileHover={{ scale: 1.03 }}
+                      transition={{ duration: 0.4 }}
                     />
                     {/* Overlay gradient on hover */}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -215,7 +208,8 @@ const AboutUs = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: 0.9 + index * 0.1 }}
-                    whileHover={{ scale: 1.05, y: -8, rotate: 1 }}
+                    whileHover={{ scale: 1.03, y: -5 }}
+                    style={{ willChange: 'transform' }}
                     className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-300 group cursor-pointer"
                   >
                     <div className={`w-14 h-14 bg-gradient-to-br ${service.color} rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-lg`}>
@@ -269,15 +263,10 @@ const AboutUs = () => {
                 whileTap={{ scale: 0.98 }}
                 className="group relative px-10 py-5 bg-[#fdcd2d] text-gray-900 font-bold text-lg rounded-xl transition-all duration-300 overflow-hidden shadow-2xl"
               >
-                <span className="relative z-10 flex items-center gap-3">
-                  Start Your Project Today
-                  <motion.span
-                    animate={{ x: [0, 5, 0] }}
-                    transition={{ duration: 1.5, repeat: Infinity }}
-                  >
-                    →
-                  </motion.span>
-                </span>
+                  <span className="relative z-10 flex items-center gap-3">
+                    Start Your Project Today
+                    <span>→</span>
+                  </span>
                 <motion.div
                   className="absolute inset-0 bg-white"
                   initial={{ x: '-100%' }}
