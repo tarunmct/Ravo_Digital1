@@ -214,7 +214,7 @@ const EventManagement = () => {
               </motion.p>
 
               {/* Three Service Cards */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10 max-w-6xl">
                 {[
                   {
                     title: 'Weddings & Celebrations',
@@ -261,14 +261,14 @@ const EventManagement = () => {
                     transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
                     whileHover={{ scale: 1.03, y: -5 }}
                     style={{ willChange: 'transform' }}
-                    className="group relative bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-300 cursor-pointer overflow-hidden"
+                    className="group relative bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-300 cursor-pointer overflow-hidden"
                   >
                     {/* Background Gradient on Hover */}
                     <div className={`absolute inset-0 bg-gradient-to-br ${service.bgGradient} opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-0`}></div>
                     
                     {/* Icon Container */}
                     <motion.div
-                      className={`relative z-10 w-16 h-16 bg-gradient-to-br ${service.gradient} rounded-xl flex items-center justify-center mb-4 shadow-lg group-hover:scale-110 transition-all duration-300`}
+                      className={`relative z-10 w-20 h-20 bg-gradient-to-br ${service.gradient} rounded-xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-all duration-300`}
                       style={{ willChange: 'transform' }}
                     >
                       <div className="text-white">
@@ -278,10 +278,10 @@ const EventManagement = () => {
 
                     {/* Content */}
                     <div className="relative z-10">
-                      <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-gray-800 transition-colors duration-300">
+                      <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-gray-800 transition-colors duration-300">
                         {service.title}
                       </h3>
-                      <p className="text-sm text-gray-600 leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
+                      <p className="text-base text-gray-600 leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
                         {service.description}
                       </p>
                     </div>
