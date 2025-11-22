@@ -148,9 +148,8 @@ const EventManagement = () => {
             >
               <Link
                 to="/contact"
-                className="group relative inline-flex items-center justify-center px-12 py-5 text-lg font-bold text-gray-900 transition-all duration-300 bg-[#fdcd2d] rounded-full overflow-hidden hover:scale-105 hover:shadow-[0_0_40px_rgba(253,205,45,0.6)]"
+                className="group relative inline-flex items-center justify-center px-12 py-5 text-lg font-bold text-white transition-all duration-300 bg-transparent border-2 border-white rounded-full overflow-hidden hover:bg-[#fdcd2d] hover:text-gray-900 hover:border-[#fdcd2d] hover:scale-105 hover:shadow-[0_0_40px_rgba(253,205,45,0.6)]"
               >
-                <span className="absolute inset-0 w-full h-full bg-white/20 group-hover:translate-x-full ease-out duration-500 transition-transform skew-x-12 origin-left" />
                 <span className="relative flex items-center gap-2">
                   Plan Your Event Now
                   <svg className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
