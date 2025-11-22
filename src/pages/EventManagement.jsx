@@ -164,7 +164,7 @@ const EventManagement = () => {
 
       {/* Seamlessly Executed Events Section */}
       <section className="py-20 bg-white overflow-hidden">
-        <div className="container mx-auto px-6 sm:px-12 lg:px-24 xl:px-40">
+        <div className="container mx-auto px-6 sm:px-12 lg:px-16 xl:px-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <motion.div
@@ -214,7 +214,7 @@ const EventManagement = () => {
               </motion.p>
 
               {/* Three Service Cards */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10 max-w-6xl">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
                 {[
                   {
                     title: 'Weddings & Celebrations',
