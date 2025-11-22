@@ -75,11 +75,13 @@ const Footer = () => {
               whileInView={{ opacity: 1, y: 0 }}
               className="mb-6"
             >
-              <img 
-                src={Logo} 
-                alt="Ravo Digitals Logo" 
-                className="h-16 w-auto"
-              />
+              <div className="bg-white rounded-xl p-4 inline-block shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <img 
+                  src={Logo} 
+                  alt="Ravo Digitals Logo" 
+                  className="h-12 w-auto"
+                />
+              </div>
             </motion.div>
             
             <p className="text-gray-300 leading-relaxed mb-6 text-balance">
