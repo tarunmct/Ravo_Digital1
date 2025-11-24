@@ -80,13 +80,13 @@ const EventManagement = () => {
 
   const testimonials = [
     {
-      quote: 'Ravo Digitals did an amazing job capturing our corporate event. The photos are stunning and the team was incredibly professional. Highly recommend!',
+      quote: 'Ravo did an amazing job capturing our corporate event. The photos are stunning and the team was incredibly professional. Highly recommend!',
       name: 'John Smith',
       title: 'CEO, TechCorp',
       image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop&crop=faces&q=80',
     },
     {
-      quote: 'We couldn\'t be happier with the photos from our wedding. Ravo Digitals was a pleasure to work with and they truly captured the magic of our special day.',
+      quote: 'We couldn\'t be happier with the photos from our wedding. Ravo was a pleasure to work with and they truly captured the magic of our special day.',
       name: 'Jane & Mark Doe',
       title: 'Newlyweds',
       image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop&crop=faces&q=80',

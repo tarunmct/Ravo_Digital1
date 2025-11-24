@@ -2,9 +2,9 @@ import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
 const SEO = ({ 
-  title = 'Ravo Digitals - Empowering Brands Digitally',
+  title = 'Ravo - Empowering Brands Digitally',
   description = 'Transform your business with innovative digital solutions. We specialize in Digital Marketing, IT Services, and Event Management to drive growth and success.',
-  keywords = 'digital marketing, IT services, event management, web development, SEO, social media marketing, Ravo Digitals',
+  keywords = 'digital marketing, IT services, event management, web development, SEO, social media marketing, Ravo',
   ogImage = '/og-image.jpg',
   ogType = 'website'
 }) => {

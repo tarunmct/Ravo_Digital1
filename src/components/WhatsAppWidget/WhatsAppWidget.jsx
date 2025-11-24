@@ -77,7 +77,7 @@ const WhatsAppWidget = () => {
                     <FaWhatsapp className="w-7 h-7 text-[#25D366]" />
                   </div>
                   <div>
-                    <h3 className="text-white font-bold text-lg">Ravo Digitals</h3>
+                    <h3 className="text-white font-bold text-lg">Ravo</h3>
                     <p className="text-white/90 text-sm">Typically replies instantly</p>
                   </div>
                 </div>

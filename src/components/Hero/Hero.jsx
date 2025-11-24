@@ -33,47 +33,35 @@ const Hero = () => {
                 variants={slideUp(0.6)} 
                 initial="initial" 
                 animate='animate'
-                whileHover={{ scale: 1.05, boxShadow: "0 10px 30px rgba(253, 205, 45, 0.4)" }}
+                viewport={{ once: true }}
+                whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.98 }}
+                style={{ willChange: 'transform' }}
                 className='group relative px-8 py-4 bg-gray-900 text-white font-semibold text-lg rounded-lg
-                hover:bg-[#fdcd2d] hover:text-gray-900 transition-all duration-300 ease-in-out
-                shadow-lg hover:shadow-xl flex items-center gap-3 overflow-hidden
+                hover:bg-[#fdcd2d] hover:text-gray-900 transition-all duration-300 ease-out
+                shadow-lg hover:shadow-xl flex items-center gap-3
                 border-2 border-transparent hover:border-[#fdcd2d]'
               >
                 <span className="relative z-10">More News</span>
-                <motion.span
-                  className="relative z-10"
-                  initial={{ x: 0 }}
-                  whileHover={{ x: 5 }}
-                  transition={{ duration: 0.3 }}
-                >
+                <span className="relative z-10 group-hover:translate-x-1 transition-transform duration-300">
                   <FiArrowRight className="w-5 h-5" />
-                </motion.span>
-                {/* Shine effect on hover */}
-                <motion.div
-                  className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent"
-                  initial={{ x: '-100%' }}
-                  whileHover={{ x: '100%' }}
-                  transition={{ duration: 0.6, ease: "easeInOut" }}
-                />
+                </span>
               </motion.button>
             </Link>
            </div>
           {/*Hero Image Section */}
-          <div className='flex justify-center
-          items-center'>
+          <div className='flex justify-center items-center'>
             <motion.img
-            initial={{
-              opacity:0,
-              x:100,
-            }}
-            animate={{
-              opacity:1,
-              x:0,
-            }}
-            transition={{duration:0.5, delay:0.5}}
-            src={HeroImg} alt="" className='w-[80%]
-            md:max-w-[550px] xl:w-[600px]' />
+              initial={{ opacity: 0, x: 100 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
+              viewport={{ once: true }}
+              style={{ willChange: 'transform, opacity' }}
+              src={HeroImg} 
+              alt="Business Growth Illustration" 
+              className='w-[85%] md:max-w-[500px] lg:max-w-[550px] xl:w-[600px]'
+              loading="eager"
+            />
           </div>
         </div>
       </div>

@@ -67,7 +67,7 @@ const Navbar = () => {
           >
             <motion.img 
               src={Logo} 
-              alt="Ravo Digitals Logo" 
+              alt="Ravo Logo" 
               className="h-16 w-auto transition-transform duration-300 group-hover:scale-105" 
               whileHover={{ scale: 1.05 }}
             />

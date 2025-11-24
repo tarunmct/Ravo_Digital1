@@ -34,7 +34,7 @@ const AboutUs = () => {
             </motion.div>
             <h1 className="text-5xl lg:text-7xl font-extrabold text-gray-900 mb-6 leading-tight">
               About <span className="text-[#fdcd2d] relative">
-                Ravo-Digitals
+                Us
                 <motion.span
                   className="absolute -bottom-2 left-0 right-0 h-3 bg-[#fdcd2d]/30 -z-10"
                   initial={{ scaleX: 0 }}
@@ -86,7 +86,7 @@ const AboutUs = () => {
                   transition={{ duration: 0.6, delay: 0.3 }}
                   className="text-xl font-medium text-gray-900"
                 >
-                  <span className="text-[#fdcd2d] font-bold">Ravo-Digitals</span>, founded in December 2025, is a dynamic and forward-thinking company focused on delivering comprehensive IT services, software development, mobile app development, and digital marketing solutions.
+                  <span className="text-[#fdcd2d] font-bold">Ravo</span>, founded in December 2025, is a dynamic and forward-thinking company focused on delivering comprehensive IT services, software development, mobile app development, and digital marketing solutions.
                 </motion.p>
 
                 <motion.p
@@ -149,6 +149,8 @@ const AboutUs = () => {
                   </motion.div>
                 ))}
               </motion.div>
+
+
             </motion.div>
 
             {/* Right Content - Visual Elements */}
@@ -177,7 +179,7 @@ const AboutUs = () => {
                   <div className="relative overflow-hidden rounded-2xl">
                     <motion.img 
                       src={AboutImg} 
-                      alt="Ravo Digitals Team" 
+                      alt="Ravo Team" 
                       className="w-full h-auto object-cover"
                       whileHover={{ scale: 1.03 }}
                       transition={{ duration: 0.4 }}
@@ -220,6 +222,19 @@ const AboutUs = () => {
                   </motion.div>
                 ))}
               </motion.div>
+
+              {/* New Paragraph */}
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 1.0 }}
+                className="mt-8 text-lg text-gray-700 leading-relaxed"
+              >
+                Over the years, we’ve earned the trust of a diverse and expanding customer base, partnering with businesses across industries who rely on us to elevate their presence and accelerate their growth. From startups finding their voice to established brands refining their identity, our clients choose us for our clarity, consistency, and commitment.
+              </motion.p>
+
+
             </motion.div>
           </div>
         </div>
@@ -255,7 +270,7 @@ const AboutUs = () => {
               Ready to Scale Your Business?
             </h2>
             <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed">
-              Join the growing list of successful businesses that trust Ravo-Digitals for their digital transformation journey.
+              Join the growing list of successful businesses that trust Ravo for their digital transformation journey.
             </p>
             <Link to="/contact">
               <motion.button

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+
 import BannerImg from '../../assets/Trap.png'
 import {motion} from 'framer-motion'
 import { slideUp } from '../../utility/animation'
@@ -16,64 +16,48 @@ const Banner = () => {
             variants={slideUp(0.2)} 
             initial="initial" 
             whileInView='animate'  
+            viewport={{ once: true }}
             className='text-4xl xl:text-5xl font-semibold
             text-black/80'>
-            Design is not what it looks like and 
-            feels like, Design is how{" "}
+            Be like a eagle and get out from the{" "}
             <br />
             <span className='text-[#fdcd2d]  
-            underline'>It Works</span>
+            underline'>trap</span>
             </motion.h1>
             
-            <Link to="/about">
-              <motion.button
-              variants={slideUp(0.4)} 
-              initial="initial" 
-              whileInView='animate'  
-              className='primary-btn 
-              hover:bg-black duration-300 text-black hover:text-white'>More News
-              </motion.button>
-            </Link>
-
-            <div className='flex gap-3'>
-                <motion.div 
-                variants={slideUp(0.6)} 
-                initial="initial" 
-                whileInView='animate' 
-                className='space-y-2 '>
-                    <p className='font-semibold
-                    text-lg'>Design Tools</p>
-                    <p>Lorem ipsum dolor sit amet 
-                        consectetur adipisicing elit.</p>
-                </motion.div>
-                <motion.div 
-                variants={slideUp(0.8)} 
-                initial="initial" 
-                whileInView='animate' 
-                className='space-y-2'>
-                    <p className='font-semibold
-                    text-lg'>Design Tools</p>
-                    <p>Lorem ipsum dolor sit amet 
-                        consectetur adipisicing elit.</p>
-                </motion.div>
-                
-            </div>
+            <motion.p 
+            variants={slideUp(0.4)} 
+            initial="initial" 
+            whileInView='animate'
+            viewport={{ once: true }}
+            className='text-gray-600 leading-relaxed'
+            >
+              Step out of boundaries that hold you back. <br />
+              Take the leap, trust your wings, and rise with purpose with Ravo by your side.
+            </motion.p>
+            <motion.p 
+            variants={slideUp(0.6)} 
+            initial="initial" 
+            whileInView='animate'
+            viewport={{ once: true }}
+            className='text-gray-600 leading-relaxed'
+            >
+              Break free from the patterns that limit your vision. Every bold step begins with the decision to move beyond comfort. Rise above doubts, embrace clarity, and chase the heights waiting for you. With Ravo, every idea finds direction, every move gains momentum, and every vision turns into purposeful progress.
+            </motion.p>
            </div>
           {/*Hero Image Section */}
-          <div className='flex justify-center
-          items-center'>
+          <div className='flex justify-center items-center'>
             <motion.img
-            initial={{
-              opacity:0,
-              x:100,
-            }}
-            whileInView={{
-              opacity:1,
-              x:0,
-            }}
-            transition={{duration:0.5, delay:0.5}}
-            src={BannerImg} alt="" className='w-[80%]
-            md:max-w-[550px] xl:w-[600px] md:!scale-125' />
+              initial={{ opacity: 0, x: 100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
+              style={{ willChange: 'transform, opacity' }}
+              src={BannerImg} 
+              alt="Break free from limitations - Eagle soaring" 
+              className='w-[85%] md:max-w-[500px] lg:max-w-[550px] xl:w-[600px]' 
+              loading="lazy"
+            />
           </div>
         </div>
       </div>

@@ -78,7 +78,7 @@ const Footer = () => {
               <div className="bg-white rounded-xl p-4 inline-block shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <img 
                   src={Logo} 
-                  alt="Ravo Digitals Logo" 
+                  alt="Ravo Logo" 
                   className="h-12 w-auto"
                 />
               </div>
@@ -190,7 +190,7 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-400 text-sm">
-              © {currentYear} Ravo Digitals. All rights reserved.
+              © {currentYear} Ravo. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm text-gray-400">
               <Link to="#" className="hover:text-[#fdcd2d] transition-colors duration-300">

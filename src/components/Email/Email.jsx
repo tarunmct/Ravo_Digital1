@@ -1,5 +1,5 @@
 import React from 'react'
-import {FaFacebook, FaInstagram, FaLinkedin, FaTwitter} from "react-icons/fa";
+
 import FooterImg from '../../assets/5.png'
 import { motion } from 'framer-motion';
 
@@ -18,19 +18,7 @@ const Email = () => {
       className="container mx-auto text-center space-y-6
       py-5">
         <div className='space-y-4'>
-        <p className='text-3xl md:text-4xl
-        font-bold'>Join Our email</p>
-        <p>Get 20% Off per order</p>
-        </div>
-        <div className='space-y-5'>
-            <button className='primary-btn
-            text-black'>Subscribe</button>
-            <div className='flex flex-row justify-center gap-3'>
-                <FaFacebook/>
-                <FaTwitter/>
-                <FaInstagram/>
-                <FaLinkedin/>
-            </div>
+            <p className='text-3xl md:text-4xl font-bold'>Don't Miss Out</p>
         </div>
       </motion.div>
     </div>
