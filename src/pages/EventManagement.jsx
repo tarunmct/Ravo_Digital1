@@ -636,7 +636,7 @@ const EventManagement = () => {
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto space-y-6"
           >
-            <h2 className="text-4xl xl:text-5xl font-bold text-[#fdcd2d] mb-4">
+            <h2 className="text-4xl xl:text-5xl font-bold text-gray-900 mb-4">
               Ready to Capture Your Story?
             </h2>
             <p className="text-xl text-gray-700 mb-8">

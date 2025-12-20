@@ -241,11 +241,11 @@ const AboutUs = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="relative py-20 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 overflow-hidden">
+      <section className="relative py-20 bg-white overflow-hidden">
         {/* Background Pattern */}
-        <div className="absolute inset-0 opacity-10">
+        <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0" style={{
-            backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,
+            backgroundImage: `radial-gradient(circle at 2px 2px, gray 1px, transparent 0)`,
             backgroundSize: '40px 40px'
           }}></div>
         </div>
@@ -266,10 +266,10 @@ const AboutUs = () => {
             >
               Let's Work Together
             </motion.span>
-            <h2 className="text-4xl lg:text-5xl font-extrabold text-white mb-6 leading-tight">
+            <h2 className="text-4xl lg:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
               Ready to Scale Your Business?
             </h2>
-            <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-xl text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
               Join the growing list of successful businesses that trust Ravo for their digital transformation journey.
             </p>
             <Link to="/contact">
