@@ -9,7 +9,7 @@ import { motion } from 'framer-motion'
 const Service = () => {
   return (
     <>
-    <div className="container mx-auto py-6 overflow-hidden">
+    <div className="container mx-auto px-4 py-6 overflow-hidden">
         {/*Header Section*/}
         <motion.div 
         initial={{opacity:0}}
