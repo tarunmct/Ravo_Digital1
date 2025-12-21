@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import Logo from '../../assets/0.png';
+import Logo from '../../assets/Ravo_Logo.png';
 import { 
   FaFacebook, 
   FaTwitter, 
@@ -75,13 +75,13 @@ const Footer = () => {
               whileInView={{ opacity: 1, y: 0 }}
               className="mb-6"
             >
-              <div className="bg-white rounded-xl p-4 inline-block shadow-lg hover:shadow-xl transition-shadow duration-300">
+
                 <img 
                   src={Logo} 
                   alt="Ravo Logo" 
                   className="h-12 w-auto"
                 />
-              </div>
+
             </motion.div>
             
             <p className="text-gray-300 leading-relaxed mb-6 text-balance">

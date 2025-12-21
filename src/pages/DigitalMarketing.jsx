@@ -137,7 +137,7 @@ const DigitalMarketing = () => {
             className="text-center mb-12"
           >
             <h2 className="text-4xl xl:text-5xl font-bold mb-4">
-              Our Digital Marketing <span className="text-gray-400 underline">Services</span>
+              Our Digital Marketing <span className="text-[#fdcd2d] underline">Services</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Comprehensive solutions to boost your online presence

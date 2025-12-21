@@ -20,7 +20,6 @@ const Banner = () => {
             className='text-4xl xl:text-5xl font-semibold
             text-black/80'>
             Be like a eagle and get out from the{" "}
-            <br />
             <span className='text-[#fdcd2d]  
             underline'>trap</span>
             </motion.h1>
@@ -30,7 +29,7 @@ const Banner = () => {
             initial="initial" 
             whileInView='animate'
             viewport={{ once: true }}
-            className='text-gray-600 leading-relaxed'
+            className='text-xl text-gray-600 leading-relaxed'
             >
               Step out of boundaries that hold you back. <br />
               Take the leap, trust your wings, and rise with purpose with Ravo by your side.
@@ -40,7 +39,7 @@ const Banner = () => {
             initial="initial" 
             whileInView='animate'
             viewport={{ once: true }}
-            className='text-gray-600 leading-relaxed'
+            className='text-xl text-gray-600 leading-relaxed'
             >
               Break free from the patterns that limit your vision. Every bold step begins with the decision to move beyond comfort. Rise above doubts, embrace clarity, and chase the heights waiting for you. With Ravo, every idea finds direction, every move gains momentum, and every vision turns into purposeful progress.
             </motion.p>

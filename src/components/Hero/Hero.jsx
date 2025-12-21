@@ -25,10 +25,10 @@ const Hero = () => {
             </motion.h1>
             <motion.p variants={slideUp(0.4)} 
             initial="initial" 
-            animate='animate'  >
+            animate='animate' className='text-2xl font-normal' >
              From branding to performance ads, we help you reach the right audience with measurable outcomes.
             </motion.p>
-            <Link to="/about" className="inline-block">
+            <Link to="/contact" className="inline-block">
               <motion.button
                 variants={slideUp(0.6)} 
                 initial="initial" 
@@ -42,7 +42,7 @@ const Hero = () => {
                 shadow-lg hover:shadow-xl flex items-center gap-3
                 border-2 border-transparent hover:border-[#fdcd2d]'
               >
-                <span className="relative z-10">More News</span>
+                <span className="relative z-10">For More Info</span>
                 <span className="relative z-10 group-hover:translate-x-1 transition-transform duration-300">
                   <FiArrowRight className="w-5 h-5" />
                 </span>

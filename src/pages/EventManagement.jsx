@@ -126,7 +126,7 @@ const EventManagement = () => {
               style={{ fontFamily: 'Playfair Display, serif' }}
             >
               Your Vision,<br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fdcd2d] to-yellow-200">Our Expertise</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fdcd2d] to-yellow-200 whitespace-nowrap">Our Expertise</span>
             </motion.h1>
             
             {/* Subheading */}
@@ -165,14 +165,14 @@ const EventManagement = () => {
       {/* Seamlessly Executed Events Section */}
       <section className="py-20 bg-white overflow-hidden">
         <div className="container mx-auto px-6 sm:px-12 lg:px-16 xl:px-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
             {/* Left Content */}
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="space-y-8"
+              className="lg:col-span-3 space-y-8"
             >
               {/* Badge */}
               <motion.span
@@ -214,7 +214,7 @@ const EventManagement = () => {
               </motion.p>
 
               {/* Three Service Cards */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
                 {[
                   {
                     title: 'Weddings & Celebrations',
@@ -261,7 +261,7 @@ const EventManagement = () => {
                     transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
                     whileHover={{ scale: 1.03, y: -5 }}
                     style={{ willChange: 'transform' }}
-                    className="group relative bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-300 cursor-pointer overflow-hidden"
+                    className="group relative bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-300 cursor-pointer overflow-hidden"
                   >
                     {/* Background Gradient on Hover */}
                     <div className={`absolute inset-0 bg-gradient-to-br ${service.bgGradient} opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-0`}></div>
@@ -299,7 +299,7 @@ const EventManagement = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="flex justify-center items-center"
+              className="lg:col-span-2 flex justify-center items-center"
             >
               <div className="relative w-full max-w-lg">
                 <motion.img
@@ -378,7 +378,7 @@ const EventManagement = () => {
           <div className="grid grid-cols-2 md:grid-cols-5 gap-8 max-w-6xl mx-auto">
             {[
               {
-                number: '1000+',
+                number: '100+',
                 label: 'EVENTS DONE',
                 icon: (
                   <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
@@ -388,7 +388,7 @@ const EventManagement = () => {
                 color: '#14B8A6',
               },
               {
-                number: '600+',
+                number: '90+',
                 label: 'HAPPY CLIENTS',
                 icon: (
                   <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
@@ -398,8 +398,8 @@ const EventManagement = () => {
                 color: '#3B82F6',
               },
               {
-                number: '250+',
-                label: 'WEDDINGS DONE',
+                number: '50+',
+                label: 'Special Events',
                 icon: (
                   <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
@@ -408,7 +408,7 @@ const EventManagement = () => {
                 color: '#EC4899',
               },
               {
-                number: '230+',
+                number: '30+',
                 label: 'CORPORATE EVENTS',
                 icon: (
                   <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
@@ -418,8 +418,8 @@ const EventManagement = () => {
                 color: '#14B8A6',
               },
               {
-                number: '80',
-                label: 'HAPPY EMPLOYEES',
+                number: '60',
+                label: 'HAPPY CUSTOMERS',
                 icon: (
                   <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
