@@ -274,10 +274,10 @@ const ITServices = () => {
             <h2 className="text-4xl xl:text-5xl font-bold text-gray-900 mb-3">
               Our Technology Stack
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-gray-600 leading-tight">
               Building on modern technologies and robust frameworks for scalable, high-performance solutions.
             </p>
-            <p className="text-lg text-gray-600 mt-1">
+            <p className="text-lg text-gray-600 mt-1 leading-tight">
               We work with modern, robust frameworks and languages to ensure performance, security, and scalability.
             </p>
           </motion.div>

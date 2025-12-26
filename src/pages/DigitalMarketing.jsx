@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { slideUp } from '../utility/animation';
 import { Link } from 'react-router-dom';
 import { FiCheckCircle, FiTrendingUp, FiBarChart2, FiUsers, FiTarget, FiClock, FiSearch, FiSmartphone, FiDollarSign, FiEdit, FiMail, FiPieChart } from 'react-icons/fi';
-import DigitalMarketingImg from '../assets/dm3.jpeg';
+import DigitalMarketingImg from '../assets/Digital marketing.png';
 
 const DigitalMarketing = () => {
   const services = [
@@ -262,7 +262,7 @@ const DigitalMarketing = () => {
             transition={{ duration: 0.5 }}
             className="max-w-3xl mx-auto space-y-6"
           >
-            <h2 className="text-4xl xl:text-5xl font-bold text-gray-900">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900">
               Ready to Grow Your <span className="text-[#fdcd2d] underline">Digital Presence</span>?
             </h2>
             <p className="text-xl text-gray-600">

@@ -122,11 +122,10 @@ const EventManagement = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
-              className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-serif font-bold text-white mb-8 leading-tight tracking-tight"
+              className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-serif font-bold text-white mb-8 leading-tight tracking-tight"
               style={{ fontFamily: 'Playfair Display, serif' }}
             >
-              Your Vision,<br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fdcd2d] to-yellow-200 whitespace-nowrap">Our Expertise</span>
+              Your Vision, <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fdcd2d] to-yellow-200 whitespace-nowrap">Our Expertise</span>
             </motion.h1>
             
             {/* Subheading */}

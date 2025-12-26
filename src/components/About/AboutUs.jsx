@@ -2,53 +2,12 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { FiCheckCircle, FiUsers, FiCalendar, FiAward, FiCode, FiSmartphone, FiTarget, FiSettings } from 'react-icons/fi';
-import AboutImg from '../../assets/about.jpeg';
+import AboutImg from '../../assets/AboutUS.png';
 
 const AboutUs = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
-      {/* Hero Section */}
-      <section className="relative py-24 bg-gradient-to-br from-yellow-50 via-white to-blue-50 overflow-hidden">
-        {/* Decorative Background Elements - Simplified */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute -top-40 -right-40 w-80 h-80 bg-yellow-200 rounded-full mix-blend-multiply filter blur-xl opacity-20"></div>
-          <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-20"></div>
-        </div>
-        
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-center"
-          >
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="inline-block mb-4"
-            >
-              <span className="px-4 py-2 bg-[#fdcd2d]/20 text-[#fdcd2d] font-semibold rounded-full text-sm uppercase tracking-wide">
-                Our Story
-              </span>
-            </motion.div>
-            <h1 className="text-5xl lg:text-7xl font-extrabold text-gray-900 mb-6 leading-tight">
-              About <span className="text-[#fdcd2d] relative">
-                Us
-                <motion.span
-                  className="absolute -bottom-2 left-0 right-0 h-3 bg-[#fdcd2d]/30 -z-10"
-                  initial={{ scaleX: 0 }}
-                  animate={{ scaleX: 1 }}
-                  transition={{ duration: 0.8, delay: 0.5 }}
-                />
-              </span>
-            </h1>
-            <p className="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto font-light">
-              Empowering businesses through innovative digital solutions and transformative technology
-            </p>
-          </motion.div>
-        </div>
-      </section>
+
 
       {/* Main Content Section */}
       <section className="py-20 relative">
@@ -63,15 +22,7 @@ const AboutUs = () => {
               className="space-y-8"
             >
               <div>
-                <motion.span
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6 }}
-                  className="text-[#fdcd2d] font-semibold text-sm uppercase tracking-wider mb-4 block"
-                >
-                  Our Journey
-                </motion.span>
+
                 <h2 className="text-4xl lg:text-5xl xl:text-6xl font-extrabold text-gray-900 mb-8 leading-tight">
                   The Tale of Our<br />
                   <span className="text-[#fdcd2d]">Achievement Story</span>
@@ -190,12 +141,23 @@ const AboutUs = () => {
                 </motion.div>
               </motion.div>
 
+              {/* New Paragraph */}
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.8 }}
+                className="mt-8 text-lg text-gray-700 leading-relaxed"
+              >
+                Over the years, we’ve earned the trust of a diverse and expanding customer base, partnering with businesses across industries who rely on us to elevate their presence and accelerate their growth. From startups finding their voice to established brands refining their identity, our clients choose us for our clarity, consistency, and commitment.
+              </motion.p>
+
               {/* Service Cards */}
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.8, delay: 0.8 }}
+                transition={{ duration: 0.8, delay: 1.0 }}
                 className="mt-8 grid grid-cols-2 gap-4"
               >
                 {[
@@ -209,7 +171,7 @@ const AboutUs = () => {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: 0.9 + index * 0.1 }}
+                    transition={{ duration: 0.5, delay: 1.1 + index * 0.1 }}
                     whileHover={{ scale: 1.03, y: -5 }}
                     style={{ willChange: 'transform' }}
                     className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-300 group cursor-pointer"
@@ -222,17 +184,6 @@ const AboutUs = () => {
                   </motion.div>
                 ))}
               </motion.div>
-
-              {/* New Paragraph */}
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 1.0 }}
-                className="mt-8 text-lg text-gray-700 leading-relaxed"
-              >
-                Over the years, we’ve earned the trust of a diverse and expanding customer base, partnering with businesses across industries who rely on us to elevate their presence and accelerate their growth. From startups finding their voice to established brands refining their identity, our clients choose us for our clarity, consistency, and commitment.
-              </motion.p>
 
 
             </motion.div>
