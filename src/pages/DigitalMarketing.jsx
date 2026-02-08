@@ -61,9 +61,9 @@ const DigitalMarketing = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white pt-8">
+    <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="container mx-auto px-6 sm:px-12 lg:px-24 xl:px-40 py-8">
+      <section className="container mx-auto px-6 sm:px-12 lg:px-24 xl:px-40 py-2">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div
             variants={slideUp(0.2)}
@@ -82,6 +82,11 @@ const DigitalMarketing = () => {
             <p className="text-lg text-gray-600 leading-relaxed">
               From search engine optimization to social media management, we create data-driven 
               strategies that deliver measurable results for your business.
+            </p>
+            <p className="text-lg text-gray-600 leading-relaxed">
+              Whether you're a startup looking to make a splash or an established brand aiming to 
+              scale, our tailored solutions ensure you stay ahead of the competition in specifically 
+              targeted markets.
             </p>
             <Link
               to="/contact"

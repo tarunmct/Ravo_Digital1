@@ -106,8 +106,32 @@ const EventManagement = () => {
           backgroundAttachment: 'fixed',
         }}
       >
-        {/* Dark Overlay for better text readability */}
-        <div className="absolute inset-0 bg-black/60"></div>
+        {/* Animated Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/60 to-purple-900/50"></div>
+        
+        {/* Floating Particles Effect */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          {[...Array(20)].map((_, i) => (
+            <motion.div
+              key={i}
+              className="absolute w-2 h-2 bg-[#fdcd2d]/30 rounded-full"
+              style={{
+                left: `${Math.random() * 100}%`,
+                top: `${Math.random() * 100}%`,
+              }}
+              animate={{
+                y: [0, -30, 0],
+                opacity: [0.2, 0.5, 0.2],
+                scale: [1, 1.5, 1],
+              }}
+              transition={{
+                duration: 3 + Math.random() * 2,
+                repeat: Infinity,
+                delay: Math.random() * 2,
+              }}
+            />
+          ))}
+        </div>
         
         {/* Content */}
         <div className="container mx-auto px-6 sm:px-12 lg:px-24 xl:px-40 max-w-5xl text-center relative z-10 py-20">
@@ -117,28 +141,74 @@ const EventManagement = () => {
             animate="animate"
             className="space-y-8"
           >
-            {/* Main Heading - Elegant Serif Font */}
+            {/* Decorative Line Above Title */}
+            <motion.div
+              initial={{ scaleX: 0 }}
+              animate={{ scaleX: 1 }}
+              transition={{ duration: 1, delay: 0.2 }}
+              className="w-24 h-1 bg-gradient-to-r from-transparent via-[#fdcd2d] to-transparent mx-auto"
+            />
+            
+            {/* Main Heading - Elegant Serif Font with Glow Effect */}
             <motion.h1 
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
               className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-serif font-bold text-white mb-8 leading-tight tracking-tight"
-              style={{ fontFamily: 'Playfair Display, serif' }}
+              style={{ 
+                fontFamily: 'Playfair Display, serif',
+                textShadow: '0 0 30px rgba(253, 205, 45, 0.3)',
+              }}
             >
-              Your Vision, <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fdcd2d] to-yellow-200 whitespace-nowrap">Our Expertise</span>
+              Your Vision, <br className="md:hidden" />
+              <motion.span 
+                className="relative inline-block"
+                animate={{
+                  textShadow: [
+                    '0 0 20px rgba(253, 205, 45, 0.5)',
+                    '0 0 40px rgba(253, 205, 45, 0.8)',
+                    '0 0 20px rgba(253, 205, 45, 0.5)',
+                  ],
+                }}
+                transition={{
+                  duration: 2,
+                  repeat: Infinity,
+                  repeatType: 'reverse',
+                }}
+              >
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fdcd2d] via-yellow-300 to-[#fdcd2d] whitespace-nowrap">
+                  Our Expertise
+                </span>
+                {/* Animated Underline */}
+                <motion.div
+                  className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-[#fdcd2d] to-yellow-300"
+                  initial={{ scaleX: 0 }}
+                  animate={{ scaleX: 1 }}
+                  transition={{ duration: 1, delay: 1 }}
+                />
+              </motion.span>
             </motion.h1>
             
-            {/* Subheading */}
+            {/* Decorative Line Below Title */}
+            <motion.div
+              initial={{ scaleX: 0 }}
+              animate={{ scaleX: 1 }}
+              transition={{ duration: 1, delay: 0.5 }}
+              className="w-24 h-1 bg-gradient-to-r from-transparent via-[#fdcd2d] to-transparent mx-auto"
+            />
+            
+            {/* Subheading with Enhanced Styling */}
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
               className="text-xl md:text-2xl lg:text-3xl text-gray-200 max-w-4xl mx-auto leading-relaxed font-light tracking-wide"
+              style={{ textShadow: '0 2px 10px rgba(0, 0, 0, 0.5)' }}
             >
               We turn moments into masterpieces. From intimate celebrations to grand corporate affairs, experience flawless event management.
             </motion.p>
 
-            {/* Call to Action Button */}
+            {/* Call to Action Button with Pulse Effect */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -147,15 +217,58 @@ const EventManagement = () => {
             >
               <Link
                 to="/contact"
-                className="group relative inline-flex items-center justify-center px-12 py-5 text-lg font-bold text-white transition-all duration-300 bg-transparent border-2 border-white rounded-full overflow-hidden hover:bg-[#fdcd2d] hover:text-gray-900 hover:border-[#fdcd2d] hover:scale-105 hover:shadow-[0_0_40px_rgba(253,205,45,0.6)]"
+                className="group relative inline-flex items-center justify-center px-12 py-5 text-lg font-bold text-gray-900 transition-all duration-500 bg-gradient-to-r from-[#fdcd2d] to-yellow-300 rounded-full overflow-hidden hover:shadow-[0_0_40px_rgba(253,205,45,0.8)] hover:scale-105"
               >
-                <span className="relative flex items-center gap-2">
+                {/* Animated Background */}
+                <div className="absolute inset-0 bg-gradient-to-r from-yellow-300 to-[#fdcd2d] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                
+                {/* Pulsing Ring */}
+                <motion.div
+                  className="absolute inset-0 rounded-full border-4 border-[#fdcd2d]"
+                  animate={{
+                    scale: [1, 1.2, 1],
+                    opacity: [0.5, 0, 0.5],
+                  }}
+                  transition={{
+                    duration: 2,
+                    repeat: Infinity,
+                  }}
+                />
+                
+                <span className="relative flex items-center gap-2 z-10">
                   Plan Your Event Now
                   <svg className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
                 </span>
               </Link>
+            </motion.div>
+            
+            {/* Trust Badge */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 1.2 }}
+              className="flex items-center justify-center gap-8 pt-8 text-white/80"
+            >
+              <div className="flex items-center gap-2">
+                <svg className="w-5 h-5 text-[#fdcd2d]" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
+                <span className="text-sm font-semibold">100+ Events</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <svg className="w-5 h-5 text-[#fdcd2d]" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
+                <span className="text-sm font-semibold">90+ Happy Clients</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <svg className="w-5 h-5 text-[#fdcd2d]" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
+                <span className="text-sm font-semibold">Award Winning</span>
+              </div>
             </motion.div>
           </motion.div>
         </div>

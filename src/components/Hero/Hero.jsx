@@ -53,8 +53,21 @@ const Hero = () => {
           <div className='flex justify-center items-center'>
             <motion.img
               initial={{ opacity: 0, x: 100 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
+              animate={{ 
+                opacity: 1, 
+                x: 0,
+                y: [0, -15, 0],
+              }}
+              transition={{ 
+                opacity: { duration: 0.6, delay: 0.3, ease: "easeOut" },
+                x: { duration: 0.6, delay: 0.3, ease: "easeOut" },
+                y: { 
+                  duration: 3, 
+                  repeat: Infinity, 
+                  ease: "easeInOut",
+                  delay: 0.9 
+                }
+              }}
               viewport={{ once: true }}
               style={{ willChange: 'transform, opacity' }}
               src={HeroImg} 

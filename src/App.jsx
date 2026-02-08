@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer'
 import WhatsAppWidget from './components/WhatsAppWidget/WhatsAppWidget'
+import ScrollToTop from './components/ScrollToTop/ScrollToTop'
 
 // Lazy load page components for better performance
 const Hero = lazy(() => import('./components/Hero/Hero'))
@@ -21,6 +22,7 @@ const NotFound = lazy(() => import('./pages/NotFound'))
 const App = () => {
   return (
     <Router>
+      <ScrollToTop />
       <main className="overflow-x-hidden">
         <Navbar />
         <Suspense fallback={

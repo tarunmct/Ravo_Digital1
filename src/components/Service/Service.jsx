@@ -9,79 +9,173 @@ import { motion } from 'framer-motion'
 const Service = () => {
   return (
     <>
-    <div className="container mx-auto px-4 py-6 overflow-hidden">
-        {/*Header Section*/}
+      <div className="container mx-auto px-4 py-12 overflow-hidden">
+        {/* Header Section */}
         <motion.div 
-        initial={{opacity:0}}
-        whileInView={{opacity:1}}
-        className='py-6 flex justify-between items-center'>
-            <h1 className='text-4xl xl:text-5xl font-bold
-            max-w-[550px]'>How to Spark Your <br /> <span className='text-[#fdcd2d]  
-            underline'>Brand</span>
-            </h1>
+          initial={{opacity:0}}
+          whileInView={{opacity:1}}
+          viewport={{ once: true }}
+          className='py-4 text-center mb-8'>
+          <h1 className='text-4xl xl:text-5xl font-bold'>
+            How to Spark Your <span className='text-[#fdcd2d]'>Brand</span>
+          </h1>
         </motion.div>
-        {/*Cards Section*/}
 
-        <div className='grid grid-cols-1
-        sm:grid-cols-2 gap-8'>
+        {/* Radial Layout - Desktop Only (lg and above) */}
+        <div className="hidden lg:block relative max-w-7xl mx-auto py-12 lg:py-16">
+          {/* Central Image */}
           <motion.div
-          initial={{opacity:0,x:100}}
-          whileInView={{opacity:1,x:0}}
-          transition={{duration:0.5,delay:0.2}}
-          className='sm:row-span-2'>
-            <img src={ServiceImg} alt="Digital marketing services illustration" className='w-[300px] mx-auto sm:w-full'/>
+            initial={{opacity:0, scale:0.8}}
+            whileInView={{opacity:1, scale:1}}
+            viewport={{ once: true }}
+            transition={{duration:0.6}}
+            className="relative z-10 mx-auto w-[280px] sm:w-[350px] lg:w-[450px]"
+          >
+            <div className="bg-white rounded-3xl p-6 shadow-2xl border-4 border-[#fdcd2d]">
+              <img 
+                src={ServiceImg} 
+                alt="Spark Your Brand" 
+                className='w-full h-auto'
+              />
+            </div>
           </motion.div>
-          <motion.div 
-          initial={{opacity:0,x:100}}
-          whileInView={{opacity:1,x:0}}
-          transition={{duration:0.5,delay:0.4}}
-          className='max-w-[300px] mx-auto pt-10'>
-            <img className='w-24 mb-[-10px]' src={DiscoverImg} alt="Discover phase icon" />
-            <p className='uppercase font-semibold
-            text-lg'>Discover</p>
-            <p className='text-gray-500 pl-6 border-l-2'>
-            At Ravo, discovery is where clarity begins. We dive deep into your brand, your audience, and your goals to uncover meaningful insights. This foundation helps us create strategies and solutions that truly align with your vision.
-            </p>
-            </motion.div>
-            <motion.div 
-            initial={{opacity:0,x:100}}
-            whileInView={{opacity:1,x:0}}
-            transition={{duration:0.5,delay:0.4}}
-            className='max-w-[300px] mx-auto pt-10'>
-            <img className='w-24 mb-[-10px]' src={StrategyImg} alt="Strategy phase icon" />
-            <p className='uppercase font-semibold
-            text-lg'>Strategy</p>
-            <p className='text-gray-500 pl-6 border-l-2'>
-            strategy means clarity. We focus on understanding your goals, shaping a clear direction, and creating simple, effective plans that lead to real results. Every move is intentional, every idea has purpose, and every decision pushes your brand forward with confidence.
-            </p>
-            </motion.div>
-            <motion.div 
-            initial={{opacity:0,x:100}}
-            whileInView={{opacity:1,x:0}}
-            transition={{duration:0.5,delay:0.5}}
-            className='max-w-[300px] mx-auto'>
-            <img className='w-24 mb-[-10px]' src={LaunchImg} alt="Launch phase icon" />
-            <p className='uppercase font-semibold
-            text-lg'>Launch</p>
-            <p className='text-gray-500 pl-6 border-l-2'>
-            launching is more than going live, it’s delivering your brand to the world with confidence. We prepare every detail, refine every touchpoint, and ensure your launch creates the right impact from day one.
-            </p>
-            </motion.div>
-            <motion.div 
-            initial={{opacity:0,x:100}}
-            whileInView={{opacity:1,x:0}}
-            transition={{duration:0.5,delay:0.7}}
-            className='max-w-[300px] mx-auto'>
-            <img className='w-24 mb-[-10px]' src={ExecuteImg} alt="Execute phase icon" />
-            <p className='uppercase font-semibold
-            text-lg'>Execute</p>
-            <p className='text-gray-500 pl-6 border-l-2'>
-            Execution is where ideas turn into action. We bring strategy to life with precision, consistency, and attention to detail ensuring every step delivers real, measurable results for your brand.
-            </p>
-            </motion.div>
 
-          </div>
+          {/* Discover - Top Left */}
+          <motion.div 
+            initial={{opacity:0, x:-50}}
+            whileInView={{opacity:1, x:0}}
+            viewport={{ once: true }}
+            transition={{duration:0.5, delay:0.2}}
+            className='absolute top-0 left-4 lg:left-0 max-w-[250px] lg:max-w-[300px]'>
+            <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 relative z-20">
+              <img className='w-24 mb-4' src={DiscoverImg} alt="Discover" />
+              <p className='uppercase font-bold text-xl mb-3'>Discover</p>
+              <p className='text-gray-600 text-base leading-relaxed'>
+                At Ravo, discovery is where clarity begins. We dive deep into your brand, your audience, and your goals.
+              </p>
+            </div>
+            {/* Connecting Line */}
+            <div className="hidden lg:block absolute top-[60%] left-full w-24 h-0.5 bg-[#fdcd2d]/40 -ml-2"></div>
+          </motion.div>
+
+          {/* Strategy - Top Right */}
+          <motion.div 
+            initial={{opacity:0, x:50}}
+            whileInView={{opacity:1, x:0}}
+            viewport={{ once: true }}
+            transition={{duration:0.5, delay:0.3}}
+            className='absolute top-0 right-4 lg:right-0 max-w-[250px] lg:max-w-[300px]'>
+            <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 relative z-20">
+              <img className='w-24 mb-4' src={StrategyImg} alt="Strategy" />
+              <p className='uppercase font-bold text-xl mb-3'>Strategy</p>
+              <p className='text-gray-600 text-base leading-relaxed'>
+                Strategy means clarity. We focus on understanding your goals and creating effective plans that lead to real results.
+              </p>
+            </div>
+            {/* Connecting Line */}
+            <div className="hidden lg:block absolute top-[60%] right-full w-24 h-0.5 bg-[#fdcd2d]/40 -mr-2"></div>
+          </motion.div>
+
+          {/* Launch - Bottom Left */}
+          <motion.div 
+            initial={{opacity:0, x:-50}}
+            whileInView={{opacity:1, x:0}}
+            viewport={{ once: true }}
+            transition={{duration:0.5, delay:0.4}}
+            className='absolute bottom-0 left-4 lg:left-0 max-w-[250px] lg:max-w-[300px]'>
+            <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 relative z-20">
+              <img className='w-24 mb-4' src={LaunchImg} alt="Launch" />
+              <p className='uppercase font-bold text-xl mb-3'>Launch</p>
+              <p className='text-gray-600 text-base leading-relaxed'>
+                Launching is delivering your brand to the world with confidence. We ensure your launch creates impact from day one.
+              </p>
+            </div>
+            {/* Connecting Line */}
+            <div className="hidden lg:block absolute top-[40%] left-full w-24 h-0.5 bg-[#fdcd2d]/40 -ml-2"></div>
+          </motion.div>
+
+          {/* Execute - Bottom Right */}
+          <motion.div 
+            initial={{opacity:0, x:50}}
+            whileInView={{opacity:1, x:0}}
+            viewport={{ once: true }}
+            transition={{duration:0.5, delay:0.5}}
+            className='absolute bottom-0 right-4 lg:right-0 max-w-[250px] lg:max-w-[300px]'>
+            <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 relative z-20">
+              <img className='w-24 mb-4' src={ExecuteImg} alt="Execute" />
+              <p className='uppercase font-bold text-xl mb-3'>Execute</p>
+              <p className='text-gray-600 text-base leading-relaxed'>
+                Execution is where plans turn into action. We bring strategy to life with precision and attention to detail.
+              </p>
+            </div>
+            {/* Connecting Line */}
+            <div className="hidden lg:block absolute top-[40%] right-full w-24 h-0.5 bg-[#fdcd2d]/40 -mr-2"></div>
+          </motion.div>
         </div>
+
+        {/* Mobile View - Stacked Layout */}
+        <div className="lg:hidden mt-12 space-y-6">
+          <motion.div 
+            initial={{opacity:0, y:20}}
+            whileInView={{opacity:1, y:0}}
+            viewport={{ once: true }}
+            transition={{duration:0.5}}
+            className='max-w-[350px] mx-auto'>
+            <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
+              <img className='w-24 mb-2' src={DiscoverImg} alt="Discover" />
+              <p className='uppercase font-bold text-lg mb-2'>Discover</p>
+              <p className='text-gray-600 text-sm leading-relaxed'>
+                At Ravo, discovery is where clarity begins. We dive deep into your brand, your audience, and your goals to uncover meaningful insights.
+              </p>
+            </div>
+          </motion.div>
+
+          <motion.div 
+            initial={{opacity:0, y:20}}
+            whileInView={{opacity:1, y:0}}
+            viewport={{ once: true }}
+            transition={{duration:0.5, delay:0.1}}
+            className='max-w-[350px] mx-auto'>
+            <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
+              <img className='w-24 mb-2' src={StrategyImg} alt="Strategy" />
+              <p className='uppercase font-bold text-lg mb-2'>Strategy</p>
+              <p className='text-gray-600 text-sm leading-relaxed'>
+                Strategy means clarity. We focus on understanding your goals, shaping a clear direction, and creating effective plans that lead to real results.
+              </p>
+            </div>
+          </motion.div>
+
+          <motion.div 
+            initial={{opacity:0, y:20}}
+            whileInView={{opacity:1, y:0}}
+            viewport={{ once: true }}
+            transition={{duration:0.5, delay:0.2}}
+            className='max-w-[350px] mx-auto'>
+            <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
+              <img className='w-24 mb-2' src={LaunchImg} alt="Launch" />
+              <p className='uppercase font-bold text-lg mb-2'>Launch</p>
+              <p className='text-gray-600 text-sm leading-relaxed'>
+                Launching is more than going live, it's delivering your brand to the world with confidence. We prepare every detail for the right impact.
+              </p>
+            </div>
+          </motion.div>
+
+          <motion.div 
+            initial={{opacity:0, y:20}}
+            whileInView={{opacity:1, y:0}}
+            viewport={{ once: true }}
+            transition={{duration:0.5, delay:0.3}}
+            className='max-w-[350px] mx-auto'>
+            <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
+              <img className='w-24 mb-2' src={ExecuteImg} alt="Execute" />
+              <p className='uppercase font-bold text-lg mb-2'>Execute</p>
+              <p className='text-gray-600 text-sm leading-relaxed'>
+                Execution is where ideas turn into action. We bring strategy to life with precision, ensuring every step delivers measurable results.
+              </p>
+            </div>
+          </motion.div>
+        </div>
+      </div>
     </>
   )
 }
