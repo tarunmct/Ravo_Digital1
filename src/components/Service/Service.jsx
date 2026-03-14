@@ -22,7 +22,7 @@ const Service = () => {
         </motion.div>
 
         {/* Radial Layout - Desktop Only (lg and above) */}
-        <div className="hidden lg:block relative max-w-7xl mx-auto py-12 lg:py-16">
+        <div className="hidden lg:block relative max-w-7xl mx-auto py-20 lg:py-28">
           {/* Central Image */}
           <motion.div
             initial={{opacity:0, scale:0.8}}

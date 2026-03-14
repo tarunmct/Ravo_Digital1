@@ -63,72 +63,77 @@ const DigitalMarketing = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="container mx-auto px-6 sm:px-12 lg:px-24 xl:px-40 py-2">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <motion.div
-            variants={slideUp(0.2)}
-            initial="initial"
-            animate="animate"
-            className="space-y-6"
-          >
-            <h1 className="text-4xl xl:text-5xl font-bold">
-              Digital <span className="text-[#fdcd2d]  underline">Marketing</span>
-            </h1>
-            <p className="text-lg text-gray-600 leading-relaxed">
-              Elevate your brand's online presence and reach your target audience effectively. 
-              Our comprehensive digital marketing services are designed to drive growth, increase 
-              engagement, and maximize your ROI.
-            </p>
-            <p className="text-lg text-gray-600 leading-relaxed">
-              From search engine optimization to social media management, we create data-driven 
-              strategies that deliver measurable results for your business.
-            </p>
-            <p className="text-lg text-gray-600 leading-relaxed">
-              Whether you're a startup looking to make a splash or an established brand aiming to 
-              scale, our tailored solutions ensure you stay ahead of the competition in specifically 
-              targeted markets.
-            </p>
-            <Link
-              to="/contact"
-              className="inline-block bg-gray-900 hover:bg-[#fdcd2d] text-white hover:text-gray-900 px-8 py-3 rounded-lg font-semibold transition-all duration-300"
-            >
-              Get Started Today
-            </Link>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, x: 100 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-            className="flex justify-center items-center relative w-full"
-          >
+      <section className="bg-white text-gray-900 pt-20 pb-20">
+        <div className="container mx-auto px-6 sm:px-12 lg:px-24 xl:px-40">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[500px]">
+            {/* Left Content */}
             <motion.div
-              className="relative group w-full max-w-2xl"
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, delay: 0.5 }}
+              variants={slideUp(0.2)}
+              initial="initial"
+              animate="animate"
+              className="space-y-6"
             >
-              {/* Decorative Background */}
-              <div className="absolute -inset-6 bg-gradient-to-br from-[#fdcd2d]/20 to-blue-200/20 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
-              
-              <motion.div
-                className="relative bg-white rounded-3xl p-8 shadow-2xl overflow-hidden border border-gray-100"
-                style={{ willChange: 'transform' }}
+              <h1 className="text-5xl xl:text-6xl font-bold leading-tight">
+                <span className="text-gray-900">Digital</span>{' '}
+                <span className="text-[#fdcd2d]">Marketing</span>
+              </h1>
+              <p className="text-xl text-gray-700 leading-relaxed max-w-xl">
+                Elevate your brand's online presence and reach your target audience effectively. 
+                Our comprehensive digital marketing services are designed to drive growth, increase 
+                engagement, and maximize your ROI.
+              </p>
+              <p className="text-lg text-gray-600 leading-relaxed max-w-xl">
+                From search engine optimization to social media management, we create data-driven 
+                strategies that deliver measurable results for your business. Whether you're a startup 
+                looking to make a splash or an established brand aiming to scale, our tailored solutions 
+                ensure you stay ahead of the competition.
+              </p>
+              <Link
+                to="/contact"
+                className="inline-block bg-[#fdcd2d] hover:bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300 transform hover:scale-105"
               >
-                <div className="relative overflow-hidden rounded-2xl">
-                  <motion.img 
-                    src={DigitalMarketingImg} 
-                    alt="Digital Marketing" 
-                    className="w-full h-auto object-cover"
-                    whileHover={{ scale: 1.03 }}
-                    transition={{ duration: 0.4 }}
+                Get Started Today
+              </Link>
+            </motion.div>
+
+            {/* Right Side - Digital Marketing Image with Floating Animation */}
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+              viewport={{ once: true }}
+              className="flex justify-center items-center"
+            >
+              <motion.div
+                animate={{ y: [0, -6, 0] }}
+                transition={{ 
+                  duration: 3.5,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                  repeatType: "reverse"
+                }}
+                style={{ willChange: 'transform' }}
+                className="relative w-full max-w-lg"
+              >
+                <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-6 shadow-2xl border border-gray-700">
+                  <img 
+                    src={DigitalMarketingImg}
+                    alt="Digital Marketing Services" 
+                    className="w-full h-auto rounded-xl shadow-lg"
                     loading="eager"
                   />
-                  {/* Overlay gradient on hover */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                
+                {/* Floating badges */}
+                <div className="absolute -top-3 -right-3 bg-[#fdcd2d] text-gray-900 px-4 py-2 rounded-lg font-bold shadow-lg z-10 animate-pulse">
+                  📈 Growth
+                </div>
+                <div className="absolute -bottom-3 -left-3 bg-blue-500 text-white px-4 py-2 rounded-lg font-bold shadow-lg z-10">
+                  🎯 Targeted
                 </div>
               </motion.div>
             </motion.div>
-          </motion.div>
+          </div>
         </div>
       </section>
 

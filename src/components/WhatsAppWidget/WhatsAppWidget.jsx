@@ -34,6 +34,7 @@ const WhatsAppWidget = () => {
               {/* Pulsing Ring Animation */}
               <motion.div
                 className="absolute inset-0 rounded-full bg-[#25D366]"
+                style={{ willChange: 'transform, opacity' }}
                 animate={{
                   scale: [1, 1.3, 1],
                   opacity: [0.7, 0, 0.7],

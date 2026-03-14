@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <>
       <div className="container mx-auto pb-0 overflow-hidden">
-        <div className="grid grid-cols-1 md:grid-cols-2 min-h-[500px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 min-h-[500px] items-center">
           {/*Text Content Section */}
           <div className='space-y-5 flex flex-col justify-center
           items-center text-center md:text-left py-0 px-10 md:pr-24 md:py-0 md:px-0 md:items-start'>

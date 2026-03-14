@@ -8,7 +8,7 @@ const Banner = () => {
   return (
     <>
       <div className="container mx-auto py-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 min-h-[500px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10">
           {/*Text Content Section */}
           <div className='space-y-8 flex flex-col justify-center
           items-center text-center md:text-left py-10 px-10 md:pr-10 md:py-0 md:px-0 md:items-start'>

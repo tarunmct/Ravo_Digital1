@@ -103,7 +103,6 @@ const EventManagement = () => {
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
-          backgroundAttachment: 'fixed',
         }}
       >
         {/* Animated Gradient Overlay */}
@@ -111,13 +110,14 @@ const EventManagement = () => {
         
         {/* Floating Particles Effect */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          {[...Array(20)].map((_, i) => (
+          {[...Array(6)].map((_, i) => (
             <motion.div
               key={i}
               className="absolute w-2 h-2 bg-[#fdcd2d]/30 rounded-full"
               style={{
                 left: `${Math.random() * 100}%`,
                 top: `${Math.random() * 100}%`,
+                willChange: 'transform, opacity',
               }}
               animate={{
                 y: [0, -30, 0],

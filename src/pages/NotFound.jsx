@@ -10,6 +10,7 @@ const NotFound = () => {
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <motion.div
           className="absolute top-20 left-10 w-72 h-72 bg-[#fdcd2d]/10 rounded-full blur-3xl"
+          style={{ willChange: 'transform, opacity' }}
           animate={{
             scale: [1, 1.2, 1],
             opacity: [0.3, 0.5, 0.3],
@@ -22,6 +23,7 @@ const NotFound = () => {
         />
         <motion.div
           className="absolute bottom-20 right-10 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"
+          style={{ willChange: 'transform, opacity' }}
           animate={{
             scale: [1.2, 1, 1.2],
             opacity: [0.2, 0.4, 0.2],

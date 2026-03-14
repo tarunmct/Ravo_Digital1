@@ -6,7 +6,7 @@ const Banner2 = () => {
   return (
     <>
       <div className="container mx-auto py-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 min-h-[500px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10">
           {/*Hero Image Section */}
           <div className='flex justify-center
           items-center'>
