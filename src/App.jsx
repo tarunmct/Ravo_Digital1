@@ -34,30 +34,30 @@ const App = () => {
           </div>
         }>
           <Routes>
-        {/* Home Page */}
-        <Route path="/" element={
-          <>
-            <Hero />
-            <Cards />
-            <Banner />
-            <Service />
-            <Banner2 />
-            <Email />
-          </>
-        } />
+        {/* Home Page */}
+        <Route path="/" element={
+          <>
+            <Hero />
+            <Cards />
+            <Banner />
+            <Service />
+            <Banner2 />
+            <Email />
+          </>
+        } />
 
-        {/* About Page */}
-        <Route path="/about" element={<AboutUs />} />
-        
-        {/* Contact Page: This is the route you asked for */}
-        <Route path="/contact" element={<Banner2/>} />
-        
-        {/* Service Dropdown Pages and Frames (Event Management) */}
-        <Route path="/digital-marketing" element={<DigitalMarketing />} />
-        <Route path="/it-services" element={<ITServices />} />
-        <Route path="/event-management" element={<EventManagement />} />
-        {/* Note: The 'Frames' link in Navbar also uses '/event-management' path. */}
-        
+        {/* About Page */}
+        <Route path="/about" element={<AboutUs />} />
+        
+        {/* Contact Page: This is the route you asked for */}
+        <Route path="/contact" element={<Banner2/>} />
+        
+        {/* Service Dropdown Pages and Frames (Event Management) */}
+        <Route path="/digital-marketing" element={<DigitalMarketing />} />
+        <Route path="/it-services" element={<ITServices />} />
+        <Route path="/event-management" element={<EventManagement />} />
+        {/* Note: The 'Frames' link in Navbar also uses '/event-management' path. */}
+        
         {/* 404 Catch-all Route */}
         <Route path="*" element={<NotFound />} />
         

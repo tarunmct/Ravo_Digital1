@@ -10,14 +10,14 @@ const Cards = () => {
   return (
     <div className='bg-gray-50'>
       <div className='container mx-auto py-8'>
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4'>
 
           {/* Card 1 */}
           <motion.div
             variants={slideUp(0.2)}
             initial="initial"
             whileInView='animate'
-            className='bg-white shadow-xl rounded-xl px-6 py-10 text-center flex flex-col justify-center items-center gap-5 md:max-w-[300px] mx-auto transition-transform duration-300 hover:scale-105'
+            className='bg-white shadow-xl rounded-xl px-6 py-10 text-center flex flex-col justify-center items-center gap-5 md:max-w-[380px] mx-auto transition-transform duration-300 hover:scale-105'
           >
             <div className='w-24 h-24 bg-black rounded-full flex items-center justify-center'>
               {/* === FIX: Increased icon size from w-10 h-10 to w-14 h-14 === */}
@@ -36,7 +36,7 @@ const Cards = () => {
             variants={slideUp(0.4)}
             initial="initial"
             whileInView='animate'
-            className='bg-white shadow-xl rounded-xl px-6 py-10 text-center flex flex-col justify-center items-center gap-5 md:max-w-[300px] mx-auto transition-transform duration-300 hover:scale-105'
+            className='bg-white shadow-xl rounded-xl px-6 py-10 text-center flex flex-col justify-center items-center gap-5 md:max-w-[380px] mx-auto transition-transform duration-300 hover:scale-105'
           >
             <div className='w-24 h-24 bg-black rounded-full flex items-center justify-center'>
               {/* === FIX: Increased icon size from w-10 h-10 to w-14 h-14 === */}
@@ -55,7 +55,7 @@ const Cards = () => {
             variants={slideUp(0.6)}
             initial="initial"
             whileInView='animate'
-            className='bg-white shadow-xl rounded-xl px-6 py-10 text-center flex flex-col justify-center items-center gap-5 md:max-w-[300px] mx-auto transition-transform duration-300 hover:scale-105'
+            className='bg-white shadow-xl rounded-xl px-6 py-10 text-center flex flex-col justify-center items-center gap-5 md:max-w-[380px] mx-auto transition-transform duration-300 hover:scale-105'
           >
             <div className='w-24 h-24 bg-black rounded-full flex items-center justify-center'>
               {/* === FIX: Increased icon size from w-10 h-10 to w-14 h-14 === */}
