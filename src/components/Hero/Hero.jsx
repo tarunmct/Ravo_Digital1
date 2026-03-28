@@ -12,12 +12,12 @@ const Hero = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 min-h-[500px] items-center">
           {/*Text Content Section */}
           <div className='space-y-5 flex flex-col justify-center
-          items-center text-center md:text-left py-0 px-10 md:pr-24 md:py-0 md:px-0 md:items-start'>
+          items-center text-center md:text-left px-6 sm:px-8 md:px-0 md:pr-12 lg:pr-24 md:items-start'>
             <motion.h1 
             variants={slideUp(0.2)} 
             initial="initial" 
             animate='animate'  
-            className='text-4xl xl:text-5xl font-bold'>
+            className='text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight'>
            Grow Your Business with Smart Digital
            {" "}
             <span className='text-[#fdcd2d] 
@@ -25,7 +25,7 @@ const Hero = () => {
             </motion.h1>
             <motion.p variants={slideUp(0.4)} 
             initial="initial" 
-            animate='animate' className='text-2xl font-normal' >
+            animate='animate' className='text-lg md:text-xl lg:text-2xl font-normal text-gray-700 leading-relaxed' >
              From branding to performance ads, we help you reach the right audience with measurable outcomes.
             </motion.p>
             <Link to="/contact" className="inline-block">

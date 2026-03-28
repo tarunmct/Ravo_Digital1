@@ -17,7 +17,7 @@ const Banner = () => {
             initial="initial" 
             whileInView='animate'  
             viewport={{ once: true }}
-            className='text-4xl xl:text-5xl font-semibold
+            className='text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight
             text-black/80'>
             Be like a eagle and get out from the{" "}
             <span className='text-[#fdcd2d]  

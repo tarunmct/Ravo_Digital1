@@ -151,7 +151,7 @@ const ITServices = () => {
               animate="animate"
               className="space-y-6"
             >
-              <h1 className="text-5xl xl:text-6xl font-bold leading-tight">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
                 <span className="text-gray-900">Innovative Web & App</span>{' '}
                 <span className="text-[#fdcd2d]">Development</span>
               </h1>
@@ -220,7 +220,7 @@ const ITServices = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl xl:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-gray-900 mb-4">
               Pillars of Our Development
             </h2>
             <p className="text-xl text-gray-600 max-w-full mx-auto whitespace-nowrap">
@@ -270,7 +270,7 @@ const ITServices = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-8"
           >
-            <h2 className="text-4xl xl:text-5xl font-bold text-gray-900 mb-3">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-gray-900 mb-3">
               Our Technology Stack
             </h2>
             <p className="text-lg text-gray-600 leading-tight">
@@ -311,7 +311,7 @@ const ITServices = () => {
       {/* Professional Industries We Serve Section - Updated Design */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-6 sm:px-12 lg:px-24 xl:px-40">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <motion.div
               initial={{ opacity: 0, x: -50 }}
@@ -320,7 +320,7 @@ const ITServices = () => {
               transition={{ duration: 0.6 }}
               className="space-y-6"
             >
-              <h2 className="text-4xl xl:text-5xl font-bold text-gray-900">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-gray-900">
                 Industries We Serve
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed">
@@ -330,7 +330,7 @@ const ITServices = () => {
                 We also deliver tailored digital solutions designed to meet the unique needs of every industry we serve. By combining strategy, design, and technology, we help businesses streamline operations, enhance customer experiences, and achieve sustainable growth—whether you're a startup building from scratch or an enterprise scaling for the future.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Our approach is rooted in understanding your business goals, target audience, and industry challenges. We focus on creating scalable, secure, and performance-driven solutions that adapt as your business evolves. With a commitment to quality and innovation, we ensure every solution delivers real value and measurable results.
+                Our approach is rooted in understanding your business goals, target audience, and industry challenges. We focus on creating scalable, secure, and performance-driven solutions.
               </p>
             </motion.div>
 
@@ -384,7 +384,7 @@ const ITServices = () => {
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto space-y-6"
           >
-            <h2 className="text-4xl xl:text-5xl font-bold text-gray-900">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-gray-900">
               Ready to Build Your Vision?
             </h2>
             <p className="text-xl text-gray-600">

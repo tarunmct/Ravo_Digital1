@@ -16,7 +16,7 @@ const Service = () => {
           whileInView={{opacity:1}}
           viewport={{ once: true }}
           className='py-4 text-center mb-8'>
-          <h1 className='text-4xl xl:text-5xl font-bold'>
+          <h1 className='text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight'>
             How to Spark Your <span className='text-[#fdcd2d]'>Brand</span>
           </h1>
         </motion.div>
@@ -49,7 +49,7 @@ const Service = () => {
             className='absolute top-0 left-4 lg:left-0 max-w-[250px] lg:max-w-[300px]'>
             <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 relative z-20">
               <img className='w-28 lg:w-32 -mt-2 -mb-6 lg:-mb-8 -ml-3' src={DiscoverImg} alt="Discover" />
-              <p className='uppercase font-bold text-xl mb-3'>Discover</p>
+              <p className='uppercase font-bold text-lg md:text-xl mb-3 text-gray-900'>Discover</p>
               <p className='text-gray-600 text-base leading-relaxed'>
                 At Ravo, discovery is where clarity begins. We dive deep into your brand, your audience, and your goals.
               </p>
@@ -67,7 +67,7 @@ const Service = () => {
             className='absolute top-0 right-4 lg:right-0 max-w-[250px] lg:max-w-[300px]'>
             <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 relative z-20">
               <img className='w-28 lg:w-32 -mt-2 -mb-6 lg:-mb-8 -ml-3' src={StrategyImg} alt="Strategy" />
-              <p className='uppercase font-bold text-xl mb-3'>Strategy</p>
+              <p className='uppercase font-bold text-lg md:text-xl mb-3 text-gray-900'>Strategy</p>
               <p className='text-gray-600 text-base leading-relaxed'>
                 Strategy means clarity. We focus on understanding your goals and creating effective plans that lead to real results.
               </p>
@@ -85,7 +85,7 @@ const Service = () => {
             className='absolute bottom-0 left-4 lg:left-0 max-w-[250px] lg:max-w-[300px]'>
             <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 relative z-20">
               <img className='w-28 lg:w-32 -mt-2 -mb-6 lg:-mb-8 -ml-3' src={LaunchImg} alt="Launch" />
-              <p className='uppercase font-bold text-xl mb-3'>Launch</p>
+              <p className='uppercase font-bold text-lg md:text-xl mb-3 text-gray-900'>Launch</p>
               <p className='text-gray-600 text-base leading-relaxed'>
                 Launching is delivering your brand to the world with confidence. We ensure your launch creates impact from day one.
               </p>
@@ -103,7 +103,7 @@ const Service = () => {
             className='absolute bottom-0 right-4 lg:right-0 max-w-[250px] lg:max-w-[300px]'>
             <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 relative z-20">
               <img className='w-28 lg:w-32 -mt-2 -mb-6 lg:-mb-8 -ml-3' src={ExecuteImg} alt="Execute" />
-              <p className='uppercase font-bold text-xl mb-3'>Execute</p>
+              <p className='uppercase font-bold text-lg md:text-xl mb-3 text-gray-900'>Execute</p>
               <p className='text-gray-600 text-base leading-relaxed'>
                 Execution is where plans turn into action. We bring strategy to life with precision and attention to detail.
               </p>

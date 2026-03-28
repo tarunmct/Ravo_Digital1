@@ -73,7 +73,7 @@ const DigitalMarketing = () => {
               animate="animate"
               className="space-y-6"
             >
-              <h1 className="text-5xl xl:text-6xl font-bold leading-tight">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
                 <span className="text-gray-900">Digital</span>{' '}
                 <span className="text-[#fdcd2d]">Marketing</span>
               </h1>
@@ -146,7 +146,7 @@ const DigitalMarketing = () => {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-4xl xl:text-5xl font-bold mb-4">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight mb-4">
               Our Digital Marketing <span className="text-[#fdcd2d] underline">Services</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -215,7 +215,7 @@ const DigitalMarketing = () => {
             >
               Why Choose Us
             </motion.span>
-            <h2 className="text-4xl xl:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-6 leading-tight">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-gray-900 mb-6 leading-tight">
               Why Choose Our{' '}
               <span className="text-[#fdcd2d] relative">
                 Services

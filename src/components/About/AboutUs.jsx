@@ -14,7 +14,7 @@ const AboutUs = () => {
             initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-5xl lg:text-6xl font-extrabold text-gray-900 mb-4"
+            className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-gray-900 mb-4"
           >
             About <span className="text-[#fdcd2d]">Us</span>
           </motion.h1>
@@ -247,7 +247,7 @@ const AboutUs = () => {
             >
               Let's Work Together
             </motion.span>
-            <h2 className="text-4xl lg:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-gray-900 mb-6 leading-tight">
               Ready to Scale Your Business?
             </h2>
             <p className="text-xl text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">

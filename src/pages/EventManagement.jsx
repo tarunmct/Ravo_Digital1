@@ -128,7 +128,7 @@ const EventManagement = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
-              className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-serif font-bold text-white mb-8 leading-tight tracking-tight"
+              className="text-4xl md:text-5xl lg:text-7xl font-serif font-extrabold tracking-tight text-white mb-8 leading-tight"
               style={{ 
                 fontFamily: 'Playfair Display, serif',
                 textShadow: '0 0 30px rgba(253, 205, 45, 0.3)',
@@ -273,7 +273,7 @@ const EventManagement = () => {
 
               {/* Heading */}
               <div>
-                <h2 className="text-4xl xl:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-4 leading-tight">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-gray-900 mb-4 leading-tight">
                   Seamlessly Executed <br />
                   <span className="text-[#fdcd2d] relative">
                     Events
@@ -411,7 +411,7 @@ const EventManagement = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-4xl xl:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-gray-900 mb-4">
               Our Portfolio
             </h2>
           </motion.div>
@@ -455,7 +455,7 @@ const EventManagement = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl xl:text-5xl font-bold italic text-gray-900">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight italic text-gray-900">
               Where Creativity Meets Professionalism.
             </h2>
           </motion.div>
@@ -562,7 +562,7 @@ const EventManagement = () => {
             >
               OUR PARTNERS & CLIENTS
             </motion.span>
-            <h2 className="text-4xl xl:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-4 leading-tight">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-gray-900 mb-4 leading-tight">
               Together, We Create{' '}
               <span className="text-[#fdcd2d] relative inline-block">
                 Magic
@@ -650,7 +650,7 @@ const EventManagement = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-4xl xl:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-gray-900 mb-4">
               What Our Clients Say
             </h2>
             <div className="w-20 h-1.5 bg-[#fdcd2d] mx-auto rounded-full"></div>
@@ -699,7 +699,7 @@ const EventManagement = () => {
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto space-y-6"
           >
-            <h2 className="text-4xl xl:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-gray-900 mb-4">
               Ready to Capture Your Story?
             </h2>
             <p className="text-xl text-gray-700 mb-8">

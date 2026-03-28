@@ -23,13 +23,13 @@
     @apply antialiased bg-white text-secondary;
   }
 
-  /* Main headings — Poppins */
-  h1, h2 {
+  /* All headings — Poppins */
+  h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
   }
 
-  /* Sub-headings — DM Sans */
-  h3, h4, h5, h6 {
+  /* Sub-headings and Paragraphs — DM Sans */
+  p, span.subtitle {
     font-family: 'DM Sans', sans-serif;
   }
 
