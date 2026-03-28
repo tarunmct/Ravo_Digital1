@@ -193,10 +193,13 @@ const Navbar = () => {
             ))}
           </ul>
 
-          {/* Mobile Menu Button */}
+        </div>
+
+        {/* Mobile menu button */}
+        <div className="lg:hidden flex items-center">
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden p-2 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors focus:outline-none focus:ring-2 focus:ring-[#fdcd2d] focus:ring-offset-2"
+            className="p-2 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors focus:outline-none"
             aria-label="Toggle menu"
           >
             <motion.div

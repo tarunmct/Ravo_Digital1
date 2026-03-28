@@ -13,6 +13,7 @@ export default {
       },
       fontFamily: {
         sans: ['Poppins', 'sans-serif'],
+        dmsans: ['DM Sans', 'sans-serif'],
       },
     },
   },

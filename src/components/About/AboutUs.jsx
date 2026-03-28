@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { FiCode, FiSmartphone, FiTarget, FiSettings } from 'react-icons/fi';
+import { FiCode, FiMonitor, FiTarget, FiCalendar } from 'react-icons/fi';
 import AboutImg from '../../assets/AboutUS.png';
 
 const AboutUs = () => {
@@ -141,9 +141,9 @@ const AboutUs = () => {
           >
             {[
               { icon: FiCode, title: 'IT Services', color: 'from-blue-500 to-blue-600' },
-              { icon: FiSettings, title: 'Software Dev', color: 'from-green-500 to-green-600' },
-              { icon: FiSmartphone, title: 'Mobile Apps', color: 'from-purple-500 to-purple-600' },
-              { icon: FiTarget, title: 'Digital Marketing', color: 'from-orange-500 to-orange-600' }
+              { icon: FiMonitor, title: 'Software & App Dev', color: 'from-green-500 to-green-600' },
+              { icon: FiTarget, title: 'Digital Marketing', color: 'from-purple-500 to-purple-600' },
+              { icon: FiCalendar, title: 'Event Management', color: 'from-orange-500 to-orange-600' }
             ].map((service, index) => (
               <motion.div
                 key={service.title}

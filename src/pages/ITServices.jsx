@@ -237,11 +237,10 @@ const ITServices = () => {
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.5, delay: index * 0.08 }}
                 whileHover={{ y: -6 }}
-                style={{ willChange: 'transform' }}
-                className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-300 h-full flex flex-col items-center text-center group cursor-pointer"
+                className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-300 h-full flex flex-col items-center text-center group"
               >
                 {/* Icon Container */}
-                <div className={`w-20 h-20 bg-gradient-to-br ${pillar.color} rounded-xl flex items-center justify-center mb-6 group-hover:scale-105 group-hover:rotate-3 transition-all duration-300 shadow-lg`}>
+                <div className={`w-20 h-20 bg-gradient-to-br ${pillar.color} rounded-xl flex items-center justify-center mb-6 transition-all duration-300 shadow-lg`}>
                   <pillar.icon className="w-10 h-10 text-white" />
                 </div>
                 
@@ -290,9 +289,8 @@ const ITServices = () => {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.4, delay: index * 0.05 }}
-                whileHover={{ scale: 1.05 }}
-                style={{ willChange: 'transform' }}
-                className="bg-white rounded-xl p-6 border border-gray-200 hover:border-[#fdcd2d] hover:border-4 transition-all duration-300 flex flex-col items-center justify-center aspect-square group cursor-pointer shadow-md hover:shadow-lg"
+                whileHover={{ scale: 1.02 }}
+                className="bg-white rounded-xl p-6 border border-gray-200 hover:border-[#fdcd2d] transition-all duration-300 flex flex-col items-center justify-center aspect-square group shadow-md hover:shadow-lg"
               >
                 <div className="mb-3 transition-transform group-hover:scale-110 w-16 h-16 flex items-center justify-center">
                   <img 

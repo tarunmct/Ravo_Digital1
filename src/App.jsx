@@ -12,6 +12,8 @@ const Service = lazy(() => import('./components/Service/Service'))
 const Banner = lazy(() => import('./components/Banner/Banner'))
 const Cards = lazy(() => import('./components/Cards/Cards'))
 const Banner2 = lazy(() => import('./components/Banner/Banner2'))
+const Clients = lazy(() => import('./components/Clients/Clients'))
+const Testimonials = lazy(() => import('./components/Testimonials/Testimonials'))
 const Email = lazy(() => import('./components/Email/Email'))
 const AboutUs = lazy(() => import('./components/About/AboutUs'))
 const DigitalMarketing = lazy(() => import('./pages/DigitalMarketing'))
@@ -41,7 +43,8 @@ const App = () => {
             <Cards />
             <Banner />
             <Service />
-            <Banner2 />
+            <Clients />
+            <Testimonials />
             <Email />
           </>
         } />
@@ -49,14 +52,13 @@ const App = () => {
         {/* About Page */}
         <Route path="/about" element={<AboutUs />} />
         
-        {/* Contact Page: This is the route you asked for */}
+        {/* Contact Page */}
         <Route path="/contact" element={<Banner2/>} />
         
-        {/* Service Dropdown Pages and Frames (Event Management) */}
+        {/* Service Dropdown Pages */}
         <Route path="/digital-marketing" element={<DigitalMarketing />} />
         <Route path="/it-services" element={<ITServices />} />
         <Route path="/event-management" element={<EventManagement />} />
-        {/* Note: The 'Frames' link in Navbar also uses '/event-management' path. */}
         
         {/* 404 Catch-all Route */}
         <Route path="*" element={<NotFound />} />
