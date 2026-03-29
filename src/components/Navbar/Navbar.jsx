@@ -193,23 +193,23 @@ const Navbar = () => {
             ))}
           </ul>
 
-        </div>
-
-        {/* Mobile menu button */}
-        <div className="lg:hidden flex items-center">
-          <button
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="p-2 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors focus:outline-none"
-            aria-label="Toggle menu"
-          >
-            <motion.div
-              animate={{ rotate: isMobileMenuOpen ? 180 : 0 }}
-              transition={{ duration: 0.3 }}
-              className="text-2xl"
+          {/* Mobile menu button */}
+          <div className="lg:hidden flex items-center">
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="p-2 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors focus:outline-none"
+              aria-label="Toggle menu"
             >
-              {isMobileMenuOpen ? '✕' : '☰'}
-            </motion.div>
-          </button>
+              <motion.div
+                animate={{ rotate: isMobileMenuOpen ? 180 : 0 }}
+                transition={{ duration: 0.3 }}
+                className="text-2xl"
+              >
+                {isMobileMenuOpen ? '✕' : '☰'}
+              </motion.div>
+            </button>
+          </div>
+
         </div>
 
         {/* Mobile Menu */}

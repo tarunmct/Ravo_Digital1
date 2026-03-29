@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import HeroImg from '../../assets/1.png'
+import HeroImg from '../../assets/Home Page 1st pic.png'
+import RocketImg from '../../assets/Rocket.png'
 import {motion} from 'framer-motion'
 import { slideUp } from '../../utility/animation'
 import { FiArrowRight } from 'react-icons/fi'
@@ -51,35 +52,60 @@ const Hero = () => {
            </div>
           {/*Hero Image Section */}
           <div className='flex justify-center items-center'>
-            <motion.img
-              initial={{ opacity: 0, x: 100 }}
-              animate={{ 
-                opacity: 1, 
-                x: 0,
-                y: [0, -15, 0],
-              }}
-              transition={{ 
-                opacity: { duration: 0.6, delay: 0.3, ease: "easeOut" },
-                x: { duration: 0.6, delay: 0.3, ease: "easeOut" },
-                y: { 
-                  duration: 3, 
-                  repeat: Infinity, 
-                  ease: "easeInOut",
-                  delay: 0.9 
-                }
-              }}
-              viewport={{ once: true }}
-              style={{ willChange: 'transform, opacity' }}
-              src={HeroImg} 
-              alt="Business Growth Illustration" 
-              className='w-[85%] md:max-w-[500px] lg:max-w-[550px] xl:w-[600px]'
-              loading="eager"
-            />
+            <div className='relative w-[85%] md:max-w-[500px] lg:max-w-[550px] xl:w-[600px]'>
+              <motion.img
+                initial={{ opacity: 0, x: 100 }}
+                animate={{ 
+                  opacity: 1, 
+                  x: 0,
+                }}
+                transition={{ 
+                  opacity: { duration: 0.6, delay: 0.3, ease: "easeOut" },
+                  x: { duration: 0.6, delay: 0.3, ease: "easeOut" }
+                }}
+                viewport={{ once: true }}
+                style={{ willChange: 'transform, opacity' }}
+                src={HeroImg} 
+                alt="Business Growth Illustration" 
+                className='w-full relative z-10'
+                loading="eager"
+              />
+              {/* Rocket Image */}
+              <motion.img
+                src={RocketImg}
+                alt="Rocket"
+                initial={{ opacity: 0, scale: 0.5, rotate: 15 }}
+                animate={{ 
+                  opacity: 1, 
+                  scale: 1,
+                  y: [0, -15, 0],
+                  rotate: [15, 17, 15]
+                }}
+                transition={{
+                  opacity: { duration: 0.5, delay: 0.8 },
+                  scale: { duration: 0.5, delay: 0.8 },
+                  y: {
+                    duration: 2.8,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                    delay: 1.3
+                  },
+                  rotate: {
+                    duration: 2.8,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                    delay: 1.3
+                  }
+                }}
+                className='absolute top-4 right-4 md:top-8 md:right-8 lg:top-12 lg:right-12 w-[220px] md:w-[320px] lg:w-[400px] xl:w-[460px] z-20 pointer-events-none'
+              />
+            </div>
           </div>
         </div>
       </div>
     </>
   )
 }
+
 
 export default Hero
