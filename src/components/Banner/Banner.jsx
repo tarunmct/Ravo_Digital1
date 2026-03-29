@@ -1,6 +1,6 @@
 import React from 'react'
 
-import BannerImg from '../../assets/7.png'
+import BannerImg from '../../assets/Ravo.png'
 import {motion} from 'framer-motion'
 import { slideUp } from '../../utility/animation'
 
@@ -53,7 +53,7 @@ const Banner = () => {
               transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
               style={{ willChange: 'transform, opacity' }}
               src={BannerImg} 
-              alt="Break free from limitations - Eagle soaring" 
+              alt="Ravo - Success and Innovation" 
               className='w-[85%] md:max-w-[500px] lg:max-w-[550px] xl:w-[600px]' 
               loading="lazy"
             />
