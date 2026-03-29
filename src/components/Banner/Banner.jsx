@@ -1,6 +1,6 @@
 import React from 'react'
 
-import BannerImg from '../../assets/Trap.png'
+import BannerImg from '../../assets/7.png'
 import {motion} from 'framer-motion'
 import { slideUp } from '../../utility/animation'
 

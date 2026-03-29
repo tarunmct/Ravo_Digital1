@@ -1,5 +1,5 @@
 import React from 'react'
-import ServiceImg from '../../assets/2.png'
+import ServiceImg from '../../assets/8.png'
 import DiscoverImg from '../../assets/Discover.png'
 import StrategyImg from '../../assets/Strategy.png'
 import LaunchImg from '../../assets/Launch.png'
