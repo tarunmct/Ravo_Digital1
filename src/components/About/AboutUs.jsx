@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { FiCode, FiMonitor, FiTarget, FiCalendar } from 'react-icons/fi';
-import AboutImg from '../../assets/AboutUS.png';
+import AboutImg from '../../assets/Abt us_updated.jpeg';
 
 const AboutUs = () => {
   return (
@@ -31,62 +31,93 @@ const AboutUs = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="space-y-6 text-lg text-gray-700 leading-relaxed"
+              className="space-y-10"
             >
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                className="text-xl font-medium text-gray-900"
-              >
-                <span className="text-[#fdcd2d] font-bold">Ravo</span>, founded in December 2025, is a dynamic and forward-thinking company focused on delivering comprehensive IT services, software development, mobile app development, and digital marketing solutions.
-              </motion.p>
+              <div className="space-y-4">
+                <motion.span
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6 }}
+                  className="inline-block px-4 py-1.5 bg-[#fdcd2d]/10 text-[#fdcd2d] font-bold rounded-full text-sm uppercase tracking-wider"
+                >
+                  Our Foundation
+                </motion.span>
+                <motion.p
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: 0.2 }}
+                  className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight"
+                >
+                  Driving <span className="text-[#fdcd2d]">Innovation</span> & Digital Excellence Since 2025.
+                </motion.p>
+                <motion.p
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: 0.3 }}
+                  className="text-lg text-gray-600 leading-relaxed"
+                >
+                  <span className="text-gray-900 font-semibold">Ravo</span> is a dynamic power-house focused on delivering comprehensive IT services, software development, and strategic digital marketing solutions.
+                </motion.p>
+              </div>
 
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.3 }}
-              >
-                Our story is built on the pillars of <strong>teamwork, innovation, and client success</strong>. What began as a vision has quickly grown into a trusted name in the technology and digital transformation industry.
-              </motion.p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4">
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: 0.4 }}
+                  className="space-y-3"
+                >
+                  <div className="flex items-center gap-3 text-[#fdcd2d]">
+                    <FiTarget className="w-6 h-6" />
+                    <h3 className="text-xl font-bold text-gray-900">Our Strategy</h3>
+                  </div>
+                  <p className="text-gray-600 text-base leading-relaxed">
+                    Our story is built on the pillars of teamwork and innovation. What began as a vision has quickly grown into a trusted name in digital transformation.
+                  </p>
+                </motion.div>
 
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.4 }}
-              >
-                With a passion for solving complex business challenges, we've helped numerous clients achieve success through innovative billing solutions, impactful SEO strategies, and high-performance web development projects.
-              </motion.p>
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: 0.5 }}
+                  className="space-y-3"
+                >
+                  <div className="flex items-center gap-3 text-blue-500">
+                    <FiMonitor className="w-6 h-6" />
+                    <h3 className="text-xl font-bold text-gray-900">Our Mission</h3>
+                  </div>
+                  <p className="text-gray-600 text-base leading-relaxed">
+                    We've helped numerous clients achieve success through innovative billing solutions and high-performance web development.
+                  </p>
+                </motion.div>
+              </div>
 
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.5 }}
-              >
-                We believe in creating technology that transforms ideas into digital experiences that drive measurable results. Our dedicated team combines technical expertise with creative thinking to ensure every project exceeds expectations.
-              </motion.p>
-
-              <motion.p
+              <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.6 }}
+                className="p-6 bg-white rounded-2xl border-l-4 border-[#fdcd2d] shadow-sm italic text-gray-700 text-lg"
               >
-                Over the years, we've earned the trust of a diverse and expanding customer base, partnering with businesses across industries who rely on us to elevate their presence and accelerate their growth.
-              </motion.p>
+                "We believe in creating technology that transforms ideas into digital experiences that drive measurable results and exceed expectations."
+              </motion.div>
 
-              <motion.p
+              <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.7 }}
+                className="text-gray-600 space-y-4"
               >
-                From startups finding their voice to established brands refining their identity, our clients choose us for our clarity, consistency, and commitment.
-              </motion.p>
+                <p>
+                  Over the years, we've earned the trust of a diverse customer base, partnering with businesses across industries to elevate their presence and accelerate growth.
+                </p>
+              </motion.div>
             </motion.div>
 
             {/* Right Content - Image */}
@@ -176,8 +207,9 @@ const AboutUs = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="space-y-6 text-lg text-gray-700 leading-relaxed"
+              className="space-y-6 text-base text-gray-700 leading-relaxed bg-white rounded-3xl p-8 border border-gray-100 shadow-sm"
             >
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">Our Digital Commitment</h3>
               <p>
                 At Ravo, we don't just build software—we create digital experiences that transform businesses. Our comprehensive approach ensures that every solution we deliver is tailored to meet your unique challenges and objectives.
               </p>

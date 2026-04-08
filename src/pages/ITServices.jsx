@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { slideUp } from '../utility/animation';
 import { Link } from 'react-router-dom';
-import ITServicesImage from '../assets/IT Services.jpg';
+import ITServicesImage from '../assets/IT Services_updated.jpeg';
 import { FiCode, FiLayout, FiTrendingUp, FiRefreshCw } from 'react-icons/fi';
 import MongoDBLogo from '../assets/MongoDB.png';
 import ExpressLogo from '../assets/Express.png';

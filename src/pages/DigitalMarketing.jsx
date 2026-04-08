@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { slideUp } from '../utility/animation';
 import { Link } from 'react-router-dom';
 import { FiCheckCircle, FiTrendingUp, FiBarChart2, FiUsers, FiTarget, FiClock, FiSearch, FiSmartphone, FiDollarSign, FiEdit, FiMail, FiPieChart } from 'react-icons/fi';
-import DigitalMarketingImg from '../assets/Digital marketing.png';
+import DigitalMarketingImg from '../assets/Digital marketing_updated.jpeg';
 
 const DigitalMarketing = () => {
   const services = [

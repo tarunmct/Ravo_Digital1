@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import Logo from '../../assets/0.png';
+import Logo from '../../assets/Black.png';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Navbar = () => {
@@ -63,12 +63,16 @@ const Navbar = () => {
           {/* Logo */}
           <Link 
             to="/" 
-            className="flex items-center group"
+            className="flex items-center group h-16 w-52 overflow-hidden relative"
           >
             <motion.img 
               src={Logo} 
               alt="Ravo Logo" 
-              className="h-16 w-auto transition-transform duration-300 group-hover:scale-105" 
+              className="absolute inset-0 m-auto w-[120%] max-w-none h-auto transition-all duration-300"
+              style={{ 
+                imageRendering: '-webkit-optimize-contrast',
+                filter: 'contrast(1.1) saturate(1.1)'
+              }}
               whileHover={{ scale: 1.05 }}
             />
           </Link>
