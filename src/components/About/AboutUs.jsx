@@ -8,7 +8,7 @@ const AboutUs = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       {/* About Us Heading */}
-      <section className="pt-32 pb-10">
+      <section className="pt-12 md:pt-16 pb-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.h1
             initial={{ opacity: 0, y: -30 }}

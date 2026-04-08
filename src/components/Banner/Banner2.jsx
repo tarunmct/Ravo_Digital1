@@ -5,8 +5,8 @@ import {motion} from 'framer-motion'
 const Banner2 = () => {
   return (
     <>
-      <div className="container mx-auto py-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-16 pt-12 md:pt-16 pb-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10">
           {/*Hero Image Section */}
           <div className='flex justify-center
           items-center'>

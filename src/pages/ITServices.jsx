@@ -141,7 +141,7 @@ const ITServices = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="bg-white text-gray-900 pt-20 pb-20">
+      <section className="bg-white text-gray-900 pt-12 md:pt-16 pb-20">
         <div className="container mx-auto px-6 sm:px-12 lg:px-24 xl:px-40">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[500px]">
             {/* Left Content */}

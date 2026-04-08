@@ -34,7 +34,7 @@ const Footer = () => {
   const socialLinks = [
     { icon: FaFacebook, href: '#', label: 'Facebook' },
     { icon: FaTwitter, href: '#', label: 'Twitter' },
-    { icon: FaInstagram, href: '#', label: 'Instagram' },
+    { icon: FaInstagram, href: 'https://www.instagram.com/ravofy_?igsh=MW84NmpqajlzZDRkMw==', label: 'Instagram' },
     { icon: FaLinkedin, href: '#', label: 'LinkedIn' },
   ];
 
@@ -73,7 +73,7 @@ const Footer = () => {
             <motion.div
               initial={{ opacity: 0, y: -20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              className="mb-6 h-16 w-48 relative overflow-hidden flex items-center"
+              className="mb-6 h-20 w-48 relative flex items-center -ml-4"
             >
               <img 
                 src={Logo} 

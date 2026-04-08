@@ -9,11 +9,11 @@ import { FiArrowRight } from 'react-icons/fi'
 const Hero = () => {
   return (
     <>
-      <div className="container mx-auto pb-0 overflow-hidden">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-16 pb-0 overflow-hidden">
         <div className="grid grid-cols-1 md:grid-cols-2 min-h-[500px] items-center">
           {/*Text Content Section */}
           <div className='space-y-5 flex flex-col justify-center
-          items-center text-center md:text-left px-6 sm:px-8 md:px-0 md:pr-12 lg:pr-24 md:items-start'>
+          items-center text-center md:text-left md:pl-4 lg:pl-5 md:pr-12 lg:pr-24 md:items-start'>
             <motion.h1 
             variants={slideUp(0.2)} 
             initial="initial" 
@@ -51,7 +51,7 @@ const Hero = () => {
             </Link>
            </div>
           {/*Hero Image Section */}
-          <div className='flex justify-center items-center'>
+          <div className='flex justify-center md:justify-end lg:justify-end items-center'>
             <div className='relative w-[85%] md:max-w-[500px] lg:max-w-[550px] xl:w-[600px]'>
               <motion.img
                 initial={{ opacity: 0, x: 100 }}

@@ -7,11 +7,11 @@ import { slideUp } from '../../utility/animation'
 const Banner = () => {
   return (
     <>
-      <div className="container mx-auto py-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-16 py-10 lg:pt-20 lg:pb-6">
+        <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-20">
           {/*Text Content Section */}
-          <div className='space-y-8 flex flex-col justify-center
-          items-center text-center md:text-left py-10 px-10 md:pr-10 md:py-0 md:px-0 md:items-start'>
+          <div className='flex-1 space-y-8 flex flex-col justify-center
+          items-center text-center md:text-left py-10 md:py-0 md:items-start'>
             <motion.h1 
             variants={slideUp(0.2)} 
             initial="initial" 
@@ -19,7 +19,7 @@ const Banner = () => {
             viewport={{ once: true }}
             className='text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight
             text-black/80'>
-            Be like a eagle and get out from the{" "}
+            Be like a sparrow and get out from the{" "}
             <span className='text-[#fdcd2d]  
             underline'>trap</span>
             </motion.h1>

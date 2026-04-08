@@ -71,7 +71,7 @@ const EventManagement = () => {
     <div>
       {/* Hero Section with Background Image */}
       <section 
-        className="relative pt-20 min-h-[90vh] flex items-center justify-center overflow-hidden"
+        className="relative pt-12 md:pt-16 min-h-[90vh] flex items-center justify-center overflow-hidden"
         style={{
           backgroundImage: 'url(https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1920&h=1080&fit=crop&q=80)',
           backgroundSize: 'cover',
@@ -474,7 +474,7 @@ const EventManagement = () => {
                 color: '#14B8A6',
               },
               {
-                number: '90+',
+                number: '60+',
                 label: 'HAPPY CLIENTS',
                 icon: (
                   <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
@@ -484,7 +484,7 @@ const EventManagement = () => {
                 color: '#3B82F6',
               },
               {
-                number: '50+',
+                number: '40+',
                 label: 'Special Events',
                 icon: (
                   <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
@@ -504,7 +504,7 @@ const EventManagement = () => {
                 color: '#14B8A6',
               },
               {
-                number: '60',
+                number: '50+',
                 label: 'HAPPY CUSTOMERS',
                 icon: (
                   <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">

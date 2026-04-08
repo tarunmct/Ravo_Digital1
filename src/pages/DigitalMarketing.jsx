@@ -63,7 +63,7 @@ const DigitalMarketing = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="bg-white text-gray-900 pt-20 pb-20">
+      <section className="bg-white text-gray-900 pt-12 md:pt-16 pb-20">
         <div className="container mx-auto px-6 sm:px-12 lg:px-24 xl:px-40">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[500px]">
             {/* Left Content */}
@@ -229,7 +229,7 @@ const DigitalMarketing = () => {
               </span>
             </h2>
             <p className="text-xl text-gray-700 leading-relaxed font-light">
-              We combine creativity with data-driven strategies to deliver exceptional results 
+              We combine creativity with data-driven strategies to deliver exceptional results <br />
               that drive growth and engagement for your business.
             </p>
           </motion.div>
@@ -273,8 +273,8 @@ const DigitalMarketing = () => {
               Ready to Grow Your <span className="text-[#fdcd2d] underline">Digital Presence</span>?
             </h2>
             <p className="text-xl text-gray-600">
-              Let's work together to create a digital marketing strategy that drives real results 
-              for your business.
+              Let's work together to create a digital marketing strategy that drives <br />
+              real results for your business.
             </p>
             <Link
               to="/contact"
