@@ -2,12 +2,12 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { slideUp } from '../utility/animation';
 import { Link } from 'react-router-dom';
-import ashokLeyland from '../assets/ashokleyland.png';
-import blackThunder from '../assets/black thunder.png';
+import renault from '../assets/renault.png';
+import skLogo from '../assets/SK Logo.png';
 import carCare from '../assets/car care.png';
 import greenTrends from '../assets/greentrends.png';
 import khalids from '../assets/khalids.png';
-import lmw from '../assets/lmw.png';
+import fotonyx from '../assets/Fotonyx.jpeg';
 import max from '../assets/max.png';
 import thalappakati from '../assets/thalappakati.jpeg';
 
@@ -592,12 +592,12 @@ const EventManagement = () => {
           {/* Clients Grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-7xl mx-auto items-center">
             {[
-              { name: 'Ashok Leyland', logo: ashokLeyland },
-              { name: 'Black Thunder', logo: blackThunder },
+              { name: 'Renault', logo: renault },
+              { name: 'SK Logo', logo: skLogo },
               { name: 'Car Care', logo: carCare },
               { name: 'Green Trends', logo: greenTrends },
               { name: 'Khalids', logo: khalids },
-              { name: 'LMW', logo: lmw },
+              { name: 'Fotonyx', logo: fotonyx },
               { name: 'Max', logo: max },
               { name: 'Thalappakati', logo: thalappakati },
             ].map((client, index) => (

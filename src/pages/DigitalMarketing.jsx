@@ -3,7 +3,8 @@ import { motion } from 'framer-motion';
 import { slideUp } from '../utility/animation';
 import { Link } from 'react-router-dom';
 import { FiCheckCircle, FiTrendingUp, FiBarChart2, FiUsers, FiTarget, FiClock, FiSearch, FiSmartphone, FiDollarSign, FiEdit, FiMail, FiPieChart } from 'react-icons/fi';
-import DigitalMarketingImg from '../assets/Digital marketing_updated.jpeg';
+import { BiRupee } from 'react-icons/bi';
+import DigitalMarketingImg from '../assets/Digital marketing_final.jpeg';
 
 const DigitalMarketing = () => {
   const services = [
@@ -24,7 +25,7 @@ const DigitalMarketing = () => {
     {
       title: 'Pay-Per-Click (PPC) Advertising',
       description: 'Maximize ROI with targeted PPC campaigns that drive qualified leads to your business.',
-      icon: FiDollarSign,
+      icon: BiRupee,
       gradient: 'from-green-500 to-emerald-500',
       bgGradient: 'from-green-50 to-emerald-50',
     },

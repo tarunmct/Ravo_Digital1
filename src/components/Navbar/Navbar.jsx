@@ -63,7 +63,7 @@ const Navbar = () => {
           {/* Logo */}
           <Link 
             to="/" 
-            className="flex items-center group h-16 w-52 overflow-hidden relative"
+            className="flex items-center group h-12 w-36 sm:h-14 sm:w-44 lg:h-16 lg:w-52 overflow-hidden relative"
           >
             <motion.img 
               src={Logo} 

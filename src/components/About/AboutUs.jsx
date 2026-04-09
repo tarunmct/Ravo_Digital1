@@ -50,7 +50,7 @@ const AboutUs = () => {
                   transition={{ duration: 0.6, delay: 0.2 }}
                   className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight"
                 >
-                  Driving <span className="text-[#fdcd2d]">Innovation</span> & Digital Excellence Since 2025.
+                  Driving <span className="text-gray-900">Innovation</span> & Digital Excellence Since 2025.
                 </motion.p>
                 <motion.p
                   initial={{ opacity: 0, y: 20 }}

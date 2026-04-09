@@ -73,7 +73,7 @@ const Footer = () => {
             <motion.div
               initial={{ opacity: 0, y: -20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              className="mb-6 h-20 w-48 relative flex items-center -ml-4"
+              className="mb-6 h-20 w-48 relative flex items-center -ml-10"
             >
               <img 
                 src={Logo} 

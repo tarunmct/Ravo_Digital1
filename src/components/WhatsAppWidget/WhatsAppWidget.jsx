@@ -24,7 +24,7 @@ const WhatsAppWidget = () => {
           {!isOpen && (
             <motion.button
               onClick={() => setIsOpen(true)}
-              className="group relative bg-[#25D366] hover:bg-[#20BA5A] text-white rounded-full p-4 shadow-2xl transition-all duration-300 hover:shadow-[0_0_30px_rgba(37,211,102,0.6)]"
+              className="group relative bg-[#25D366] hover:bg-[#20BA5A] text-white rounded-full w-14 h-14 flex items-center justify-center shadow-2xl transition-all duration-300 hover:shadow-[0_0_30px_rgba(37,211,102,0.6)]"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
               initial={{ scale: 0, opacity: 0 }}
@@ -46,7 +46,7 @@ const WhatsAppWidget = () => {
                 }}
               />
               
-              <FaWhatsapp className="w-8 h-8 relative z-10" />
+              <FaWhatsapp className="w-7 h-7 relative z-10" />
               
               {/* Tooltip */}
               <motion.div
