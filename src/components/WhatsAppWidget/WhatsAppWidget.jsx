@@ -8,7 +8,7 @@ const WhatsAppWidget = () => {
   const whatsappNumber = '917598601699';
   const message = 'Hello! I need support.';
   
-  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+  const whatsappLink = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(message)}`;
 
   return (
     <>
