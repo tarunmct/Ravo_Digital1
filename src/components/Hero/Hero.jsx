@@ -97,7 +97,7 @@ const Hero = () => {
                     delay: 1.3
                   }
                 }}
-                className='absolute top-4 right-4 md:top-8 md:right-8 lg:top-12 lg:right-12 w-[220px] md:w-[320px] lg:w-[400px] xl:w-[460px] z-20 pointer-events-none'
+                className='absolute top-12 -right-1 md:top-16 md:right-1 lg:top-20 lg:right-4 w-[235px] md:w-[340px] lg:w-[425px] xl:w-[485px] z-20 pointer-events-none'
               />
             </div>
           </div>

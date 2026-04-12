@@ -94,15 +94,15 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3 text-gray-300">
                 <FaPhone className="w-4 h-4 text-[#fdcd2d]" />
-                <span>+1 (555) 123-4567</span>
+                <span className="font-bold">+91 7598601699</span>
               </div>
               <div className="flex items-center space-x-3 text-gray-300">
                 <FaEnvelope className="w-4 h-4 text-[#fdcd2d]" />
-                <span>hello@ravodigitals.com</span>
+                <span>ravofysolutions@gmail.com</span>
               </div>
               <div className="flex items-center space-x-3 text-gray-300">
                 <FaMapMarkerAlt className="w-4 h-4 text-[#fdcd2d]" />
-                <span>123 Business Ave, Suite 100</span>
+                <span>Thudiyalur, Coimbatore - 34</span>
               </div>
             </div>
           </motion.div>

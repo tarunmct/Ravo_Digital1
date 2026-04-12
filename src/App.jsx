@@ -5,6 +5,8 @@ import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer'
 import WhatsAppWidget from './components/WhatsAppWidget/WhatsAppWidget'
 import ScrollToTop from './components/ScrollToTop/ScrollToTop'
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 // Lazy load page components for better performance
 const Hero = lazy(() => import('./components/Hero/Hero'))
@@ -67,6 +69,7 @@ const App = () => {
         </Suspense>
         <Footer />
         <WhatsAppWidget />
+        <ToastContainer position="top-right" autoClose={3000} />
       </main>
     </Router>
   )
