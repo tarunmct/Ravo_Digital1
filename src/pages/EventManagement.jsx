@@ -593,7 +593,7 @@ const EventManagement = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-7xl mx-auto items-center">
             {[
               { name: 'Renault', logo: renault },
-              { name: 'SK Logo', logo: skLogo },
+              { name: 'SK Construction', logo: skLogo },
               { name: 'Car Care', logo: carCare },
               { name: 'Green Trends', logo: greenTrends },
               { name: 'Khalids', logo: khalids },
