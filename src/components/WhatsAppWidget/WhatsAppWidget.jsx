@@ -5,8 +5,7 @@ import { FaWhatsapp, FaTimes } from 'react-icons/fa';
 const WhatsAppWidget = () => {
   const [isOpen, setIsOpen] = useState(false);
   
-  // Replace this with your WhatsApp number (without + or spaces)
-  const whatsappNumber = '1234567890'; // User will replace this with their number
+  const whatsappNumber = '917598601699';
   const message = 'Hello! I need support.';
   
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
