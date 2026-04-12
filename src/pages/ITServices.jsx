@@ -223,7 +223,7 @@ const ITServices = () => {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-gray-900 mb-4">
               Pillars of Our Development
             </h2>
-            <p className="text-xl text-gray-600 max-w-full mx-auto whitespace-nowrap">
+            <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
               Building excellence through proven methodologies and cutting-edge technologies
             </p>
           </motion.div>

@@ -193,7 +193,7 @@ const Footer = () => {
             <p className="text-gray-400 text-sm">
               © {currentYear} Ravo. All rights reserved.
             </p>
-            <div className="flex space-x-6 text-sm text-gray-400">
+            <div className="flex flex-wrap justify-center gap-4 md:gap-6 text-sm text-gray-400">
               <Link to="#" className="hover:text-[#fdcd2d] transition-colors duration-300">
                 Privacy Policy
               </Link>

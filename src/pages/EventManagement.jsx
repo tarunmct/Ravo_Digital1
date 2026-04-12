@@ -223,7 +223,7 @@ const EventManagement = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1.2 }}
-              className="flex items-center justify-center gap-8 pt-8 text-white/80"
+              className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 md:gap-8 pt-8 text-white/80"
             >
               <div className="flex items-center gap-2">
                 <svg className="w-5 h-5 text-[#fdcd2d]" fill="currentColor" viewBox="0 0 20 20">

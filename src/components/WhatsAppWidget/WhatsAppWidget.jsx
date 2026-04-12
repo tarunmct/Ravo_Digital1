@@ -14,7 +14,7 @@ const WhatsAppWidget = () => {
     <>
       {/* Floating Button */}
       <motion.div
-        className="fixed bottom-6 right-6 z-50"
+        className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50"
         initial={{ scale: 0, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.5, delay: 1 }}
@@ -64,7 +64,7 @@ const WhatsAppWidget = () => {
         <AnimatePresence>
           {isOpen && (
             <motion.div
-              className="bg-white rounded-2xl shadow-2xl overflow-hidden w-80"
+              className="bg-white rounded-2xl shadow-2xl overflow-hidden w-[calc(100vw-2rem)] max-w-80"
               initial={{ scale: 0, opacity: 0, y: 20 }}
               animate={{ scale: 1, opacity: 1, y: 0 }}
               exit={{ scale: 0, opacity: 0, y: 20 }}
