@@ -6,10 +6,14 @@ import renault from '../assets/renault.png';
 import skLogo from '../assets/SK Logo.png';
 import carCare from '../assets/car care.png';
 import greenTrends from '../assets/greentrends.png';
-import khalids from '../assets/khalids.png';
+import artboard from '../assets/Artboard.jpeg';
 import fotonyx from '../assets/Fotonyx.jpeg';
 import max from '../assets/max.png';
-import thalappakati from '../assets/thalappakati.jpeg';
+import lookCool from '../assets/look_cool.png';
+import test1 from '../assets/Test_1.png';
+import test2 from '../assets/Test_2.png';
+import test3 from '../assets/Test_3.png';
+import test4 from '../assets/Test_4.png';
 
 const EventManagement = () => {
 
@@ -42,28 +46,28 @@ const EventManagement = () => {
 
   const testimonials = [
     {
-      quote: 'Ravo did an amazing job capturing our corporate event. The photos are stunning and the team was incredibly professional. Highly recommend!',
-      name: 'John Smith',
-      title: 'CEO, TechCorp',
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop&crop=faces&q=80',
+      quote: 'Ravofy did an amazing job developing our Ecom website. The photos are stunning and the team was incredibly professional. Highly recommend!',
+      name: 'Fathima',
+      title: 'Look kool, Founder',
+      image: test1,
     },
     {
       quote: 'We couldn\'t be happier with the photos from our wedding. Ravo was a pleasure to work with and they truly captured the magic of our special day.',
-      name: 'Jane & Mark Doe',
-      title: 'Newlyweds',
-      image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop&crop=faces&q=80',
+      name: 'Ananya Iyer',
+      title: 'Green Trends, Founder',
+      image: test2,
     },
     {
       quote: 'Exceptional professionalism and creativity. They turned our simple product launch into a high-end experience for all attendees.',
-      name: 'Michael Chen',
-      title: 'Marketing Director, Zephyr',
-      image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop&crop=faces&q=80',
+      name: 'Vikram Ramesh',
+      title: 'Fotonyx, Founder',
+      image: test3,
     },
     {
       quote: 'Their attention to detail is unmatched. From the lighting to the flow of the event, everything was perfect.',
-      name: 'Sarah Williams',
-      title: 'Event Planner',
-      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop&crop=faces&q=80',
+      name: 'Arjun Menon',
+      title: 'Max, Founder',
+      image: test4,
     },
   ];
 
@@ -596,10 +600,10 @@ const EventManagement = () => {
               { name: 'SK Construction', logo: skLogo },
               { name: 'Car Care', logo: carCare },
               { name: 'Green Trends', logo: greenTrends },
-              { name: 'Khalids', logo: khalids },
+              { name: 'Little Soe', logo: artboard },
               { name: 'Fotonyx', logo: fotonyx },
               { name: 'Max', logo: max },
-              { name: 'Thalappakati', logo: thalappakati },
+              { name: 'Look Kool', logo: lookCool },
             ].map((client, index) => (
               <motion.div
                 key={client.name}

@@ -4,20 +4,20 @@ import renault from '../../assets/renault.png';
 import skLogo from '../../assets/SK Logo.png';
 import carCare from '../../assets/car care.png';
 import greenTrends from '../../assets/greentrends.png';
-import khalids from '../../assets/khalids.png';
+import artboard from '../../assets/Artboard.jpeg';
 import fotonyx from '../../assets/Fotonyx.jpeg';
 import max from '../../assets/max.png';
-import thalappakati from '../../assets/thalappakati.jpeg';
+import lookCool from '../../assets/look_cool.png';
 
 const clients = [
   { name: 'Renault', logo: renault },
   { name: 'SK Construction', logo: skLogo },
   { name: 'Car Care', logo: carCare },
   { name: 'Green Trends', logo: greenTrends },
-  { name: 'Khalids', logo: khalids },
+  { name: 'Little Soe', logo: artboard },
   { name: 'Fotonyx', logo: fotonyx },
   { name: 'Max', logo: max },
-  { name: 'Thalappakati', logo: thalappakati },
+  { name: 'Look Kool', logo: lookCool },
 ];
 
 const Clients = () => {
