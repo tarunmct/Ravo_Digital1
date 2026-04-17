@@ -67,6 +67,13 @@ const Testimonials = () => {
             <FaChevronRight className="w-4 h-4 md:w-5 md:h-5 mr-[-2px]" />
           </button>
 
+          {/* Hidden preload: forces browser to cache all images before user navigates */}
+          <div aria-hidden="true" style={{ display: 'none' }}>
+            {testimonials.map((t, i) => (
+              <img key={i} src={t.image} alt="" loading="eager" />
+            ))}
+          </div>
+
           {/* Testimonial Card */}
           <div className="bg-white rounded-[2rem] p-8 md:p-14 shadow-[0_10px_40px_-10px_rgba(0,0,0,0.08)] border border-gray-50 text-center relative mx-4 sm:mx-0 min-h-[320px] flex flex-col justify-center">
             <FaQuoteLeft className="text-[#fdcd2d] opacity-20 w-12 h-12 md:w-16 md:h-16 absolute top-6 left-6 md:top-10 md:left-10" />
@@ -88,7 +95,7 @@ const Testimonials = () => {
                     src={testimonials[currentIndex].image}
                     alt={testimonials[currentIndex].name}
                     className="w-16 h-16 rounded-full object-cover border-[3px] border-[#fdcd2d] mb-4 shadow-md bg-gray-100"
-                    loading="lazy"
+                    loading="eager"
                   />
                   <h3 className="text-lg font-bold text-gray-900">
                     {testimonials[currentIndex].name}
