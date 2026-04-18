@@ -32,7 +32,7 @@ const Banner = () => {
             className='text-xl text-gray-600 leading-relaxed'
             >
               Step out of boundaries that hold you back. <br />
-              Take the leap, trust your wings, and rise with purpose with Ravo by your side.
+              Take the leap, trust your wings, and rise with purpose with Ravofy by your side.
             </motion.p>
             <motion.p 
             variants={slideUp(0.6)} 
@@ -41,7 +41,7 @@ const Banner = () => {
             viewport={{ once: true }}
             className='text-xl text-gray-600 leading-relaxed'
             >
-              Break free from the patterns that limit your vision. Every bold step begins with the decision to move beyond comfort. Rise above doubts, embrace clarity, and chase the heights waiting for you. With Ravo, every idea finds direction, every move gains momentum, and every vision turns into purposeful progress.
+              Break free from the patterns that limit your vision. Every bold step begins with the decision to move beyond comfort. Rise above doubts, embrace clarity, and chase the heights waiting for you. With Ravofy, every idea finds direction, every move gains momentum, and every vision turns into purposeful progress.
             </motion.p>
            </div>
           {/*Hero Image Section */}

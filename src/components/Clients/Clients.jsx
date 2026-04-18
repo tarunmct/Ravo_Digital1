@@ -1,22 +1,22 @@
 import React, { useRef, useEffect } from 'react';
 
-import renault from '../../assets/renault.png';
+import thulirHerba from '../../assets/Thulir herba.jpeg';
 import skLogo from '../../assets/SK Logo.png';
 import carCare from '../../assets/car care.png';
-import greenTrends from '../../assets/greentrends.png';
+import cleaninguru from '../../assets/cleaninguru.jpeg';
 import artboard from '../../assets/Artboard.jpeg';
 import fotonyx from '../../assets/Fotonyx.jpeg';
-import max from '../../assets/max.png';
+import goliSoda from '../../assets/Goli_soda.jpeg';
 import lookCool from '../../assets/look_cool.png';
 
 const clients = [
-  { name: 'Renault', logo: renault },
+  { name: 'Thulir herba', logo: thulirHerba },
   { name: 'SK Construction', logo: skLogo },
-  { name: 'Car Care', logo: carCare },
-  { name: 'Green Trends', logo: greenTrends },
+  { name: '5K Car Care', logo: carCare },
+  { name: 'CleaninGuru', logo: cleaninguru },
   { name: 'Little Soe', logo: artboard },
   { name: 'Fotonyx', logo: fotonyx },
-  { name: 'Max', logo: max },
+  { name: 'Goli Soda', logo: goliSoda },
   { name: 'Look Kool', logo: lookCool },
 ];
 

@@ -14,21 +14,21 @@ const testimonials = [
     image: test1,
   },
   {
-    quote: "We couldn't be happier with the photos from our wedding. Ravo was a pleasure to work with and they truly captured the magic of our special day.",
-    name: 'Ananya Iyer',
-    title: 'Green Trends, Founder',
+    quote: 'We are looking for product launch and video shoot, Ravofy consulted us and we had a good videos, posters and product shoots. I support Ravofy.',
+    name: 'Dr Nivetha',
+    title: 'Thulir Herba, Founder',
     image: test2,
   },
   {
-    quote: 'Exceptional professionalism and creativity. They turned our simple product launch into a high-end experience for all attendees.',
-    name: 'Vikram Ramesh',
+    quote: 'Ravofy benchmarked our logo. Loved it so much. We are so much happy with our Logo',
+    name: 'Vikram',
     title: 'Fotonyx, Founder',
     image: test3,
   },
   {
-    quote: 'Their attention to detail is unmatched. From the lighting to the flow of the event, everything was perfect.',
-    name: 'Arjun Menon',
-    title: 'Max, Founder',
+    quote: 'We created Logo Design, Letter pad and Visiting Card from Ravofy, everything looks stunning and professional look. I strongly suggest Ravofy',
+    name: 'Prem',
+    title: 'Little Soe, Founder',
     image: test4,
   },
 ];
@@ -49,7 +49,7 @@ const Testimonials = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold mb-2">Client <span className="underline underline-offset-4 decoration-1 font-bold text-[#fdcd2d] pl-2">Testimonials</span></h2>
-          <p className="text-gray-500 mt-4 max-w-xl mx-auto">What our clients say about our work and commitment to excellence.</p>
+          <p className="text-gray-500 text-lg md:text-xl font-light mt-4 max-w-xl mx-auto whitespace-nowrap">What our clients say about our work and commitment to excellence.</p>
         </div>
 
         <div className="max-w-4xl mx-auto relative px-2 sm:px-14">

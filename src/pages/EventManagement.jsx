@@ -2,45 +2,53 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { slideUp } from '../utility/animation';
 import { Link } from 'react-router-dom';
-import renault from '../assets/renault.png';
+import goliSoda from '../assets/Goli_soda.jpeg';
 import skLogo from '../assets/SK Logo.png';
 import carCare from '../assets/car care.png';
-import greenTrends from '../assets/greentrends.png';
+import thulirHerba from '../assets/Thulir herba.jpeg';
 import artboard from '../assets/Artboard.jpeg';
 import fotonyx from '../assets/Fotonyx.jpeg';
-import max from '../assets/max.png';
+import cleaninguru from '../assets/cleaninguru.jpeg';
 import lookCool from '../assets/look_cool.png';
 import test1 from '../assets/Test_1.png';
 import test2 from '../assets/Test_2.png';
 import test3 from '../assets/Test_3.png';
 import test4 from '../assets/Test_4.png';
+import wedding1 from '../assets/replace_2.png';
+import wedding2 from '../assets/replace_1.png';
+import babyShower1 from '../assets/baby_shower_1.jpeg';
+import wedding3 from '../assets/wedding_photography_3.jpeg';
+import decor2 from '../assets/decor_2.png';
+import eventMain from '../assets/event-main.jpeg';
+import functionMode from '../assets/function_mode.png';
 
 const EventManagement = () => {
 
   const portfolioImages = [
     {
-      url: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200&h=1200&fit=crop&q=80',
-      alt: 'Corporate networking event',
+      url: wedding1,
+      alt: 'Wedding Photography 1',
+      className: 'object-top',
     },
     {
-      url: 'https://images.unsplash.com/photo-1519167758481-83f29da8b1d1?w=1200&h=1200&fit=crop&q=80',
-      alt: 'Outdoor wedding ceremony',
+      url: wedding2,
+      alt: 'Wedding Photography 2',
     },
     {
-      url: 'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1200&h=1200&fit=crop&q=80',
-      alt: 'Conference stage setup',
+      url: babyShower1,
+      alt: 'Baby Shower',
     },
     {
-      url: 'https://images.unsplash.com/photo-1478146897153-7e3ab1f55e4e?w=1200&h=1200&fit=crop&q=80',
-      alt: 'Large conference hall',
+      url: wedding3,
+      alt: 'Wedding Photography 3',
     },
     {
-      url: 'https://images.unsplash.com/photo-1517456837005-d757b959ae2b?w=1200&h=1200&fit=crop&q=80',
-      alt: 'Elegant dinner table setting',
+      url: decor2,
+      alt: 'Decor 2',
     },
     {
-      url: 'https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=1200&h=1200&fit=crop&q=80',
-      alt: 'Team building activity',
+      url: eventMain,
+      alt: 'Event Main',
     },
   ];
 
@@ -52,21 +60,21 @@ const EventManagement = () => {
       image: test1,
     },
     {
-      quote: 'We couldn\'t be happier with the photos from our wedding. Ravo was a pleasure to work with and they truly captured the magic of our special day.',
-      name: 'Ananya Iyer',
-      title: 'Green Trends, Founder',
+      quote: 'We are looking for product launch and video shoot, Ravofy consulted us and we had a good videos, posters and product shoots. I support Ravofy.',
+      name: 'Dr Nivetha',
+      title: 'Thulir Herba, Founder',
       image: test2,
     },
     {
-      quote: 'Exceptional professionalism and creativity. They turned our simple product launch into a high-end experience for all attendees.',
-      name: 'Vikram Ramesh',
+      quote: 'Ravofy benchmarked our logo. Loved it so much. We are so much happy with our Logo',
+      name: 'Vikram',
       title: 'Fotonyx, Founder',
       image: test3,
     },
     {
-      quote: 'Their attention to detail is unmatched. From the lighting to the flow of the event, everything was perfect.',
-      name: 'Arjun Menon',
-      title: 'Max, Founder',
+      quote: 'We created Logo Design, Letter pad and Visiting Card from Ravofy, everything looks stunning and professional look. I strongly suggest Ravofy',
+      name: 'Prem',
+      title: 'Little Soe, Founder',
       image: test4,
     },
   ];
@@ -255,7 +263,7 @@ const EventManagement = () => {
       {/* Seamlessly Executed Events Section */}
       <section className="py-20 bg-white overflow-hidden">
         <div className="container mx-auto px-6 sm:px-12 lg:px-16 xl:px-20">
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-end">
             {/* Left Content */}
             <motion.div
               initial={{ opacity: 0, x: -50 }}
@@ -389,11 +397,11 @@ const EventManagement = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="lg:col-span-2 flex justify-center items-center"
+              className="lg:col-span-2 flex justify-center items-end"
             >
               <div className="relative w-full max-w-lg">
                 <motion.img
-                  src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&h=1000&fit=crop&q=80"
+                  src={functionMode}
                   alt="Event management"
                   className="rounded-2xl shadow-2xl w-full"
                   whileHover={{ scale: 1.02 }}
@@ -435,7 +443,7 @@ const EventManagement = () => {
                   <img
                     src={image.url}
                     alt={image.alt}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    className={`w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 ${image.className || ''}`}
                     loading="lazy"
                     onError={(e) => {
                       e.target.src = `https://images.unsplash.com/photo-1511578314322-379afb476865?w=1200&h=1200&fit=crop&q=80`;
@@ -596,13 +604,13 @@ const EventManagement = () => {
           {/* Clients Grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-7xl mx-auto items-center">
             {[
-              { name: 'Renault', logo: renault },
+              { name: 'Goli Soda', logo: goliSoda },
               { name: 'SK Construction', logo: skLogo },
               { name: 'Car Care', logo: carCare },
-              { name: 'Green Trends', logo: greenTrends },
+              { name: 'Thulir Herba', logo: thulirHerba },
               { name: 'Little Soe', logo: artboard },
               { name: 'Fotonyx', logo: fotonyx },
-              { name: 'Max', logo: max },
+              { name: 'Cleaninguru', logo: cleaninguru },
               { name: 'Look Kool', logo: lookCool },
             ].map((client, index) => (
               <motion.div

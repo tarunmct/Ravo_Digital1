@@ -51,7 +51,7 @@ const Service = () => {
               <img className='w-28 lg:w-32 -mt-4 -mb-4 lg:-mb-6 -ml-3' src={DiscoverImg} alt="Discover" />
               <p className='uppercase font-bold text-lg md:text-xl mb-3 text-gray-900'>Discover</p>
               <p className='text-gray-600 text-base leading-relaxed'>
-                At Ravo, discovery is where clarity begins. We dive deep into your brand, your audience, and your goals.
+                At Ravofy, discovery is where clarity begins. We dive deep into your brand, your audience, and your goals.
               </p>
             </div>
             {/* Connecting Line */}
@@ -125,7 +125,7 @@ const Service = () => {
               <img className='w-28 lg:w-32 -mt-4 -mb-4 -ml-3' src={DiscoverImg} alt="Discover" />
               <p className='uppercase font-bold text-lg mb-2'>Discover</p>
               <p className='text-gray-600 text-sm leading-relaxed'>
-                At Ravo, discovery is where clarity begins. We dive deep into your brand, your audience, and your goals to uncover meaningful insights.
+                At Ravofy, discovery is where clarity begins. We dive deep into your brand, your audience, and your goals to uncover meaningful insights.
               </p>
             </div>
           </motion.div>

@@ -59,7 +59,7 @@ const AboutUs = () => {
                   transition={{ duration: 0.6, delay: 0.3 }}
                   className="text-lg text-gray-600 leading-relaxed"
                 >
-                  <span className="text-gray-900 font-semibold">Ravo</span> is a dynamic power-house focused on delivering comprehensive IT services, software development, and strategic digital marketing solutions.
+                  <span className="text-gray-900 font-semibold">Ravofy</span> is a dynamic power-house focused on delivering comprehensive IT services, software development, and strategic digital marketing solutions.
                 </motion.p>
               </div>
 
@@ -211,7 +211,7 @@ const AboutUs = () => {
             >
               <h3 className="text-2xl font-bold text-gray-900 mb-2">Our Digital Commitment</h3>
               <p>
-                At Ravo, we don't just build software—we create digital experiences that transform businesses. Our comprehensive approach ensures that every solution we deliver is tailored to meet your unique challenges and objectives.
+                At Ravofy, we don't just build software—we create digital experiences that transform businesses. Our comprehensive approach ensures that every solution we deliver is tailored to meet your unique challenges and objectives.
               </p>
 
               <p>
@@ -283,7 +283,7 @@ const AboutUs = () => {
               Ready to Scale Your Business?
             </h2>
             <p className="text-xl text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
-              Join the growing list of successful businesses that trust Ravo for their digital transformation journey.
+              Join the growing list of successful businesses that trust Ravofy for their digital transformation journey.
             </p>
             <Link to="/contact">
               <motion.button
