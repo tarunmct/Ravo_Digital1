@@ -120,7 +120,7 @@ const EventManagement = () => {
         </div>
         
         {/* Content */}
-        <div className="container mx-auto px-6 sm:px-12 lg:px-24 xl:px-40 max-w-5xl text-center relative z-10 py-20">
+        <div className="container mx-auto px-6 sm:px-12 lg:px-12 xl:px-20 max-w-5xl text-center relative z-10 py-20">
           <motion.div
             variants={slideUp(0.2)}
             initial="initial"
@@ -140,7 +140,7 @@ const EventManagement = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
-              className="text-4xl md:text-5xl lg:text-7xl font-serif font-extrabold tracking-tight text-white mb-8 leading-tight"
+              className="text-3xl md:text-5xl lg:text-6xl font-serif font-extrabold tracking-tight text-white mb-8 leading-tight"
               style={{ 
                 fontFamily: 'Playfair Display, serif',
                 textShadow: '0 0 30px rgba(253, 205, 45, 0.3)',
@@ -188,7 +188,7 @@ const EventManagement = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
-              className="text-xl md:text-2xl lg:text-3xl text-gray-200 max-w-4xl mx-auto leading-relaxed font-light tracking-wide"
+              className="text-base md:text-lg lg:text-xl text-gray-200 max-w-4xl mx-auto leading-relaxed font-light tracking-wide"
               style={{ textShadow: '0 2px 10px rgba(0, 0, 0, 0.5)' }}
             >
               We turn moments into masterpieces. From intimate celebrations to grand corporate affairs, experience flawless event management.

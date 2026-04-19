@@ -65,7 +65,7 @@ const DigitalMarketing = () => {
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="bg-white text-gray-900 pt-12 md:pt-16 pb-20">
-        <div className="container mx-auto px-6 sm:px-12 lg:px-24 xl:px-40">
+        <div className="container mx-auto px-6 sm:px-12 lg:px-12 xl:px-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[500px]">
             {/* Left Content */}
             <motion.div
@@ -74,16 +74,16 @@ const DigitalMarketing = () => {
               animate="animate"
               className="space-y-6"
             >
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
-                <span className="text-gray-900">Digital</span>{' '}
-                <span className="text-[#fdcd2d]">Marketing</span>
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight">
+                <span className="text-gray-900 whitespace-nowrap">Digital</span>{' '}
+                <span className="text-[#fdcd2d] whitespace-nowrap">Marketing</span>
               </h1>
-              <p className="text-xl text-gray-700 leading-relaxed max-w-xl">
+              <p className="text-base md:text-lg lg:text-xl text-gray-700 leading-relaxed max-w-xl">
                 Elevate your brand's online presence and reach your target audience effectively. 
                 Our comprehensive digital marketing services are designed to drive growth, increase 
                 engagement, and maximize your ROI.
               </p>
-              <p className="text-lg text-gray-600 leading-relaxed max-w-xl">
+              <p className="text-base md:text-lg lg:text-xl text-gray-700 leading-relaxed max-w-xl">
                 From search engine optimization to social media management, we create data-driven 
                 strategies that deliver measurable results for your business. Whether you're a startup 
                 looking to make a splash or an established brand aiming to scale, our tailored solutions 

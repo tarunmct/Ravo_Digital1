@@ -140,7 +140,7 @@ const ITServices = () => {
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="bg-white text-gray-900 pt-12 md:pt-16 pb-20">
-        <div className="container mx-auto px-6 sm:px-12 lg:px-24 xl:px-40">
+        <div className="container mx-auto px-6 sm:px-12 lg:px-12 xl:px-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[500px]">
             {/* Left Content */}
             <motion.div
@@ -149,14 +149,14 @@ const ITServices = () => {
               animate="animate"
               className="space-y-6"
             >
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
-                <span className="text-gray-900">Innovative Web & App</span>{' '}
-                <span className="text-[#fdcd2d]">Development</span>
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight">
+                <span className="text-gray-900 whitespace-nowrap">Innovative Web & App</span>{' '}
+                <span className="text-[#fdcd2d] whitespace-nowrap">Development</span>
               </h1>
-              <p className="text-xl text-gray-700 leading-relaxed max-w-xl">
+              <p className="text-base md:text-lg lg:text-xl text-gray-700 leading-relaxed max-w-xl">
                 We build custom digital solutions that drive growth and efficiency for your business.
               </p>
-              <p className="text-lg text-gray-600 leading-relaxed max-w-xl">
+              <p className="text-base md:text-lg lg:text-xl text-gray-700 leading-relaxed max-w-xl">
                 We craft high-performance websites and applications tailored to your business needs. By combining modern design, robust development, and scalable architecture, we deliver digital solutions that are fast, secure, and user-focused. From concept to launch and beyond, our team ensures every product is built to perform, adapt, and grow alongside your business goals.
               </p>
               <Link

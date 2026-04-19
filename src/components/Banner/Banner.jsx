@@ -17,8 +17,7 @@ const Banner = () => {
             initial="initial" 
             whileInView='animate'  
             viewport={{ once: true }}
-            className='text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight
-            text-black/80'>
+            className='text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight'>
             Be like a sparrow and get out from the{" "}
             <span className='text-[#fdcd2d]  
             underline'>trap</span>
@@ -29,7 +28,7 @@ const Banner = () => {
             initial="initial" 
             whileInView='animate'
             viewport={{ once: true }}
-            className='text-xl text-gray-600 leading-relaxed'
+            className='text-base md:text-lg lg:text-xl text-gray-700 leading-relaxed'
             >
               Step out of boundaries that hold you back. <br />
               Take the leap, trust your wings, and rise with purpose with Ravofy by your side.
@@ -39,7 +38,7 @@ const Banner = () => {
             initial="initial" 
             whileInView='animate'
             viewport={{ once: true }}
-            className='text-xl text-gray-600 leading-relaxed'
+            className='text-base md:text-lg lg:text-xl text-gray-700 leading-relaxed'
             >
               Break free from the patterns that limit your vision. Every bold step begins with the decision to move beyond comfort. Rise above doubts, embrace clarity, and chase the heights waiting for you. With Ravofy, every idea finds direction, every move gains momentum, and every vision turns into purposeful progress.
             </motion.p>
